@@ -18,10 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#090d16" },
-  ],
+  themeColor: "#fafaf9",
   width: "device-width",
   initialScale: 1,
 };
@@ -98,20 +95,15 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Anti-FOUC inline theme initializer */}
+        {/* Enforce pure luxury light theme and reset any stale dark mode */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 try {
-                  var storedTheme = localStorage.getItem('theme');
-                  var theme = storedTheme || 'light';
-                  document.documentElement.setAttribute('data-theme', theme);
-                  if (theme === 'dark') {
-                    document.documentElement.classList.add('dark');
-                  } else {
-                    document.documentElement.classList.remove('dark');
-                  }
+                  localStorage.setItem('theme', 'light');
+                  document.documentElement.setAttribute('data-theme', 'light');
+                  document.documentElement.classList.remove('dark');
                 } catch(e) {}
               })();
             `,
@@ -121,7 +113,7 @@ export default function RootLayout({
         <OrganizationJsonLd />
         <AdSenseScript />
       </head>
-      <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)]">
+      <body className="min-h-full flex flex-col bg-[#fafaf9] text-zinc-900">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

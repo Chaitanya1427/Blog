@@ -4,34 +4,31 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import { ThemeToggle } from "./ThemeToggle";
-
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="md:hidden flex items-center gap-2">
-      <ThemeToggle />
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+        className="p-2 rounded-lg border border-zinc-200 text-zinc-700 hover:bg-zinc-100 transition-colors cursor-pointer"
       >
-        {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 text-zinc-700 dark:text-zinc-200" />}
+        {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 text-zinc-700" />}
       </button>
 
       {isOpen && (
         <div
-          className="fixed inset-0 top-16 z-40 bg-zinc-950/60 backdrop-blur-xs"
+          className="fixed inset-0 top-16 z-40 bg-zinc-950/40 backdrop-blur-xs"
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="w-full max-w-xs h-[calc(100vh-4rem)] bg-white dark:bg-zinc-900 border-r border-zinc-200 dark:border-zinc-800 p-6 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-left duration-200"
+            className="w-full max-w-xs h-[calc(100vh-4rem)] bg-white border-r border-zinc-200 p-6 flex flex-col justify-between overflow-y-auto animate-in slide-in-from-left duration-200 shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-6">
-              <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
+              <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 Navigation
               </div>
               <nav className="flex flex-col space-y-1">
@@ -40,7 +37,7 @@ export function MobileNav() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-medium text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    className="flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-zinc-800 hover:bg-zinc-100 transition-colors"
                   >
                     <span>{item.title}</span>
                     <ChevronRight className="w-4 h-4 text-zinc-400" />
@@ -48,8 +45,8 @@ export function MobileNav() {
                 ))}
               </nav>
 
-              <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800">
-                <div className="text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-3">
+              <div className="pt-4 border-t border-zinc-200">
+                <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-3">
                   Key Topics
                 </div>
                 <div className="flex flex-wrap gap-1.5">
@@ -58,7 +55,7 @@ export function MobileNav() {
                       key={topic.href}
                       href={topic.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-xs px-2.5 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-emerald-700"
+                      className="text-xs px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:text-emerald-700 font-medium"
                     >
                       {topic.title}
                     </Link>
@@ -67,7 +64,7 @@ export function MobileNav() {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-zinc-200 dark:border-zinc-800 text-xs text-zinc-500">
+            <div className="pt-6 border-t border-zinc-200 text-xs text-zinc-500">
               <p>© 2026 {siteConfig.name}.</p>
               <p className="mt-1">Built for engineers and modern web creators.</p>
             </div>

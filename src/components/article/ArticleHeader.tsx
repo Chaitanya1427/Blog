@@ -35,20 +35,20 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
         )}
       </div>
 
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 dark:text-white leading-[1.15]">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 leading-[1.15]">
         {article.title}
       </h1>
 
-      <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed font-normal">
+      <p className="text-base sm:text-lg text-zinc-600 leading-relaxed font-normal">
         {article.excerpt}
       </p>
 
       {/* Author and Date Meta Row */}
-      <div className="pt-2 pb-4 border-y border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="pt-2 pb-4 border-y border-zinc-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <Link
             href={`/author/${article.author.slug}`}
-            className="relative w-11 h-11 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-700 bg-zinc-200 shrink-0"
+            className="relative w-11 h-11 rounded-full overflow-hidden border border-zinc-200 bg-zinc-200 shrink-0"
           >
             <Image
               src={article.author.avatar}
@@ -61,11 +61,11 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
           <div>
             <Link
               href={`/author/${article.author.slug}`}
-              className="font-semibold text-sm text-zinc-900 dark:text-white hover:text-emerald-700 dark:hover:text-emerald-400"
+              className="font-semibold text-sm text-zinc-900 hover:text-emerald-700 transition-colors"
             >
               {article.author.name}
             </Link>
-            <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 mt-0.5">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
                 <span>Published {formatDate(article.date)}</span>
@@ -73,7 +73,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
               {article.updatedAt && (
                 <>
                   <span>•</span>
-                  <span className="flex items-center gap-1 text-emerald-700 dark:text-emerald-400 font-medium">
+                  <span className="flex items-center gap-1 text-emerald-700 font-semibold">
                     <RefreshCw className="w-3 h-3" />
                     <span>Updated {formatDate(article.updatedAt)}</span>
                   </span>
@@ -92,7 +92,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
       </div>
 
       {/* Featured Hero Image (Priority loaded for Core Web Vitals LCP) */}
-      <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-800">
+      <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200 bg-zinc-100">
         <Image
           src={article.featuredImage}
           alt={article.featuredImageAlt || article.title}

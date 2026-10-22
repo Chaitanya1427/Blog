@@ -10,11 +10,11 @@ export function FaqSection({ faqs }: FaqSectionProps) {
   if (!faqs || faqs.length === 0) return null;
 
   return (
-    <section className="my-12 p-6 sm:p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800">
+    <section className="my-12 p-6 sm:p-8 rounded-2xl bg-zinc-50 border border-zinc-200">
       <FaqJsonLd faqs={faqs} />
       <div className="flex items-center gap-2 mb-6">
-        <HelpCircle className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-        <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
+        <HelpCircle className="w-5 h-5 text-emerald-600" />
+        <h3 className="text-xl font-semibold text-zinc-900">
           Frequently Asked Questions
         </h3>
       </div>
@@ -23,12 +23,12 @@ export function FaqSection({ faqs }: FaqSectionProps) {
         {faqs.map((faq, idx) => (
           <div
             key={idx}
-            className="p-4 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800"
+            className="p-5 rounded-xl bg-white border border-zinc-200 shadow-2xs"
           >
-            <h4 className="text-sm sm:text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+            <h4 className="text-sm sm:text-base font-semibold text-zinc-900 mb-2">
               {faq.question}
             </h4>
-            <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
               {faq.answer}
             </p>
           </div>

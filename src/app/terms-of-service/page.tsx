@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
       <Breadcrumbs items={[{ name: "Terms of Service", href: "/terms-of-service" }]} />
 
       <header className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900">
           Terms of Service
         </h1>
         <p className="text-xs text-zinc-500">
@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
         </p>
       </header>
 
-      <div className="prose prose-zinc dark:prose-invert max-w-none text-sm sm:text-base leading-relaxed space-y-6">
+      <div className="prose prose-zinc prose-headings:text-zinc-900 prose-p:text-zinc-700 max-w-none text-sm sm:text-base leading-relaxed space-y-6">
         <section>
           <h2>1. Acceptance of Terms</h2>
           <p>

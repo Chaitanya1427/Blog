@@ -11,13 +11,13 @@ export function RelatedArticles({ articles }: RelatedArticlesProps) {
   }
 
   return (
-    <section className="mt-16 pt-12 border-t border-zinc-200 dark:border-zinc-800">
+    <section className="mt-16 pt-12 border-t border-zinc-200">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900 dark:text-white">
+          <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900">
             Recommended Engineering Reads
           </h3>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+          <p className="text-sm text-zinc-600 mt-1">
             Hand-curated related tutorials, benchmarks, and architecture guides.
           </p>
         </div>

@@ -18,18 +18,18 @@ export default function AffiliateDisclosurePage() {
       <Breadcrumbs items={[{ name: "Affiliate Disclosure", href: "/affiliate-disclosure" }]} />
 
       <header className="space-y-3">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900">
           Affiliate & Commercial Disclosure
         </h1>
-        <p className="text-sm text-zinc-500">
+        <p className="text-sm text-zinc-600">
           Transparency in software recommendations, monetization, and editorial ethics.
         </p>
       </header>
 
       {/* Primary Disclosure Callout Box */}
-      <div className="p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-950 dark:text-emerald-200 space-y-3">
+      <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 space-y-3">
         <div className="flex items-center gap-2 font-semibold text-sm">
-          <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+          <ShieldCheck className="w-5 h-5 text-emerald-600" />
           <span>Our Transparent Promise to Readers</span>
         </div>
         <p className="text-xs sm:text-sm leading-relaxed">
@@ -37,7 +37,7 @@ export default function AffiliateDisclosurePage() {
         </p>
       </div>
 
-      <div className="prose prose-zinc dark:prose-invert max-w-none text-sm sm:text-base leading-relaxed space-y-6">
+      <div className="prose prose-zinc prose-headings:text-zinc-900 prose-p:text-zinc-700 max-w-none text-sm sm:text-base leading-relaxed space-y-6">
         <section>
           <h2>How Affiliate Links Function</h2>
           <p>

@@ -114,13 +114,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             {/* Main Article Body (Rendered to semantic HTML without client JS requirement) */}
             <div
-              className="prose prose-zinc dark:prose-invert max-w-none text-base sm:text-lg leading-relaxed
-                prose-headings:font-semibold prose-headings:tracking-tight
+              className="prose prose-zinc max-w-none text-base sm:text-lg leading-relaxed
+                prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-zinc-900
                 prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4
                 prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
-                prose-p:mb-5 prose-p:leading-relaxed
-                prose-li:my-1
-                prose-code:text-emerald-700 dark:prose-code:text-emerald-400 prose-code:bg-zinc-100 dark:prose-code:bg-zinc-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-mono prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
+                prose-p:mb-5 prose-p:leading-relaxed prose-p:text-zinc-700
+                prose-li:my-1 prose-li:text-zinc-700
+                prose-code:text-emerald-800 prose-code:bg-zinc-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-mono prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
                 prose-pre:border prose-pre:border-zinc-800"
               dangerouslySetInnerHTML={{ __html: article.htmlContent || "" }}
             />
@@ -139,7 +139,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
             {/* Tags List */}
             {article.tags.length > 0 && (
-              <div className="my-10 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+              <div className="my-10 pt-6 border-t border-zinc-200">
                 <div className="flex items-center gap-2 text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-3">
                   <Tag className="w-3.5 h-3.5" />
                   <span>Article Tags:</span>
@@ -149,7 +149,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     <Link
                       key={tag}
                       href={`/tag/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}
-                      className="text-xs px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 hover:bg-emerald-100 dark:hover:bg-emerald-950/60 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
+                      className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 font-medium transition-colors"
                     >
                       #{tag}
                     </Link>
@@ -172,7 +172,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <div className="sticky top-24 space-y-8">
               {/* Table of contents */}
               {article.tableOfContents.length > 0 && (
-                <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs">
+                <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-xs">
                   <TableOfContents items={article.tableOfContents} />
                 </div>
               )}
@@ -185,19 +185,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               />
 
               {/* Author Quick Card */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xs text-xs space-y-3">
-                <span className="font-semibold uppercase tracking-wider text-zinc-400 block">
+              <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-xs text-xs space-y-3">
+                <span className="font-semibold uppercase tracking-wider text-zinc-500 block">
                   Written By
                 </span>
-                <p className="font-semibold text-sm text-zinc-900 dark:text-white">
+                <p className="font-semibold text-sm text-zinc-900">
                   {article.author.name}
                 </p>
-                <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
+                <p className="text-zinc-600 leading-relaxed font-normal">
                   {article.author.bio}
                 </p>
                 <Link
                   href={`/author/${article.author.slug}`}
-                  className="inline-block text-emerald-700 dark:text-emerald-400 font-semibold hover:underline"
+                  className="inline-block text-emerald-700 hover:text-emerald-800 font-semibold hover:underline"
                 >
                   View all articles by {article.author.name} →
                 </Link>

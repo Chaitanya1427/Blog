@@ -48,15 +48,15 @@ export default async function TagPage({ params }: TagPageProps) {
         items={[{ name: `#${decodedSlug}`, href: `/tag/${slug}` }]}
       />
 
-      <div className="p-8 rounded-2xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center gap-4">
-        <div className="p-3 rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+      <div className="p-8 rounded-2xl bg-zinc-50 border border-zinc-200 flex items-center gap-4">
+        <div className="p-3 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200">
           <TagIcon className="w-6 h-6" />
         </div>
         <div>
-          <h1 className="text-2xl sm:text-3xl font-semibold text-zinc-900 dark:text-white">
+          <h1 className="text-2xl sm:text-3xl font-semibold text-zinc-900">
             Tagged: #{decodedSlug}
           </h1>
-          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-600 mt-1">
             {articles.length} {articles.length === 1 ? "article found" : "articles found"}
           </p>
         </div>
@@ -69,8 +69,8 @@ export default async function TagPage({ params }: TagPageProps) {
           ))}
         </div>
       ) : (
-        <div className="p-12 text-center rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800">
-          <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+        <div className="p-12 text-center rounded-2xl border border-dashed border-zinc-300 bg-white">
+          <p className="text-zinc-600 text-sm">
             No articles found matching this tag.
           </p>
         </div>

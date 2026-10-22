@@ -42,12 +42,12 @@ export function TableOfContents({ items }: TableOfContentsProps) {
 
   return (
     <nav aria-label="Table of contents" className="space-y-3">
-      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-900 dark:text-zinc-200">
-        <List className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-900">
+        <List className="w-4 h-4 text-emerald-600" />
         <span>Table of Contents</span>
       </div>
 
-      <ul className="space-y-1.5 text-xs text-zinc-600 dark:text-zinc-400 border-l border-zinc-200 dark:border-zinc-800">
+      <ul className="space-y-1.5 text-xs text-zinc-600 border-l border-zinc-200">
         {items.map((item) => {
           const isActive = activeId === item.id;
           return (
@@ -63,8 +63,8 @@ export function TableOfContents({ items }: TableOfContentsProps) {
                   item.level === 3 ? "-ml-[21px]" : ""
                 } ${
                   isActive
-                    ? "border-emerald-600 text-emerald-700 dark:text-emerald-400 font-semibold"
-                    : "border-transparent hover:text-zinc-900 dark:hover:text-zinc-200"
+                    ? "border-emerald-600 text-emerald-700 font-semibold"
+                    : "border-transparent hover:text-zinc-900"
                 }`}
               >
                 {item.text}

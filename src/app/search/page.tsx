@@ -27,9 +27,9 @@ async function SearchResults({ searchParams }: SearchParamsProps) {
   return (
     <div className="space-y-8">
       {query && (
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
+        <p className="text-sm text-zinc-600">
           Showing {results.length} {results.length === 1 ? "result" : "results"} for &ldquo;
-          <span className="font-semibold text-zinc-900 dark:text-zinc-200">{query}</span>&rdquo;
+          <span className="font-semibold text-zinc-900">{query}</span>&rdquo;
         </p>
       )}
 
@@ -42,29 +42,29 @@ async function SearchResults({ searchParams }: SearchParamsProps) {
       )}
 
       {query && results.length === 0 && (
-        <div className="p-12 text-center rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 space-y-3">
-          <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-200">
+        <div className="p-12 text-center rounded-2xl border border-dashed border-zinc-300 bg-zinc-50 space-y-3">
+          <h3 className="text-lg font-semibold text-zinc-900">
             No matching articles found
           </h3>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
+          <p className="text-sm text-zinc-600 max-w-md mx-auto">
             We couldn&apos;t find any articles matching &ldquo;{query}&rdquo;. Check your spelling or browse our key categories.
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-2">
             <Link
               href="/category/ai-tools"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
             >
               AI Tools
             </Link>
             <Link
               href="/category/ai-coding"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
             >
               AI Coding
             </Link>
             <Link
               href="/category/software-comparisons"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
             >
               Software Comparisons
             </Link>
@@ -73,7 +73,7 @@ async function SearchResults({ searchParams }: SearchParamsProps) {
       )}
 
       {!query && (
-        <div className="p-12 text-center rounded-2xl bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-500">
+        <div className="p-12 text-center rounded-2xl bg-zinc-50 border border-zinc-200 text-sm text-zinc-600">
           Enter a term above to search our technical articles, software reviews, and benchmarks.
         </div>
       )}
@@ -96,7 +96,7 @@ export default function SearchPage({ searchParams }: SearchParamsProps) {
       <Breadcrumbs items={[{ name: "Search", href: "/search" }]} />
 
       <div className="max-w-3xl space-y-6">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900">
           Search Articles & Guides
         </h1>
 
@@ -106,7 +106,7 @@ export default function SearchPage({ searchParams }: SearchParamsProps) {
             type="search"
             name="q"
             placeholder="Search keywords: Next.js, Supabase, Cursor, Docker..."
-            className="w-full pl-12 pr-28 py-3.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-2xs"
+            className="w-full pl-12 pr-28 py-3.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-2xs"
           />
           <button
             type="submit"

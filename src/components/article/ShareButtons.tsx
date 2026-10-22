@@ -40,7 +40,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on X (Twitter)"
-        className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors"
+        className="p-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900 transition-colors shadow-2xs"
       >
         <XTwitterIcon className="w-4 h-4" />
       </a>
@@ -49,7 +49,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Share on LinkedIn"
-        className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors"
+        className="p-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900 transition-colors shadow-2xs"
       >
         <LinkedInIcon className="w-4 h-4" />
       </a>
@@ -57,7 +57,7 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
         onClick={handleCopy}
         type="button"
         aria-label="Copy link to clipboard"
-        className="p-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors relative cursor-pointer"
+        className="p-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900 transition-colors relative cursor-pointer shadow-2xs"
       >
         {copied ? (
           <Check className="w-4 h-4 text-emerald-500" />

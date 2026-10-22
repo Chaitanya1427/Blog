@@ -36,9 +36,9 @@ export function AdUnit({
     if (showDevPlaceholder && process.env.NODE_ENV === "development") {
       return (
         <div
-          className={`my-8 p-4 rounded-xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center text-xs text-zinc-400 ${className}`}
+          className={`my-8 p-4 rounded-xl border border-dashed border-zinc-300 bg-zinc-100/80 text-center text-xs text-zinc-600 ${className}`}
         >
-          <span className="font-mono text-[10px] uppercase tracking-wider block mb-1">
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-wider block mb-1 text-zinc-700">
             AdSense Placement ({format})
           </span>
           <span>Disabled in development. Set NEXT_PUBLIC_ADSENSE_ENABLED=true in production.</span>
@@ -56,9 +56,9 @@ export function AdUnit({
 
   return (
     <div
-      className={`my-8 overflow-hidden rounded-xl bg-zinc-50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 p-2 text-center ${heightClasses[format]} ${className}`}
+      className={`my-8 overflow-hidden rounded-xl bg-zinc-50 border border-zinc-200 p-2 text-center ${heightClasses[format]} ${className}`}
     >
-      <div className="text-[10px] uppercase font-semibold tracking-widest text-zinc-400 mb-1.5 select-none">
+      <div className="text-[10px] uppercase font-semibold tracking-widest text-zinc-500 mb-1.5 select-none">
         Advertisement
       </div>
       <ins

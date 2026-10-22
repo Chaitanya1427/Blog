@@ -64,18 +64,18 @@ export async function parseMarkdownToHtml(markdown: string): Promise<string> {
     const target = isExternal ? 'target="_blank"' : "";
     const titleAttr = title ? `title="${title}"` : "";
 
-    return `<a href="${href}" ${rel} ${target} ${titleAttr} class="text-emerald-700 dark:text-emerald-400 hover:underline font-medium">${text}</a>`;
+    return `<a href="${href}" ${rel} ${target} ${titleAttr} class="text-emerald-700 hover:text-emerald-800 hover:underline font-medium">${text}</a>`;
   };
 
   renderer.table = (token) => {
     // Wrap tables in responsive overflow container
     let headerHtml = "";
     if (token.header) {
-      headerHtml = `<thead><tr>${token.header.map((cell) => `<th class="border border-zinc-300 dark:border-zinc-700 px-4 py-2 bg-zinc-100 dark:bg-zinc-800 text-left font-semibold">${cell.text}</th>`).join("")}</tr></thead>`;
+      headerHtml = `<thead><tr>${token.header.map((cell) => `<th class="border border-zinc-200 px-4 py-2.5 bg-zinc-100 text-left font-semibold text-zinc-900">${cell.text}</th>`).join("")}</tr></thead>`;
     }
-    const bodyHtml = `<tbody>${token.rows.map((row) => `<tr>${row.map((cell) => `<td class="border border-zinc-300 dark:border-zinc-700 px-4 py-2">${cell.text}</td>`).join("")}</tr>`).join("")}</tbody>`;
+    const bodyHtml = `<tbody>${token.rows.map((row) => `<tr>${row.map((cell) => `<td class="border border-zinc-200 px-4 py-2 text-zinc-700">${cell.text}</td>`).join("")}</tr>`).join("")}</tbody>`;
 
-    return `<div class="overflow-x-auto my-6"><table class="w-full text-sm border-collapse border border-zinc-300 dark:border-zinc-700">${headerHtml}${bodyHtml}</table></div>`;
+    return `<div class="overflow-x-auto my-6 rounded-xl border border-zinc-200 shadow-2xs"><table class="w-full text-sm border-collapse">${headerHtml}${bodyHtml}</table></div>`;
   };
 
   marked.setOptions({

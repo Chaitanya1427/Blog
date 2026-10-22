@@ -22,7 +22,7 @@ export function AffiliateButton({
   const variantClasses = {
     primary: "bg-emerald-700 hover:bg-emerald-600 text-white shadow-emerald-700/20",
     secondary:
-      "bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 border border-zinc-300 dark:border-zinc-700",
+      "bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300",
   };
 
   return (

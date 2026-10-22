@@ -19,13 +19,13 @@ export function Badge({
 
   const variantClasses = {
     primary:
-      "bg-emerald-50 text-emerald-800 dark:bg-emerald-950/70 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/80",
+      "bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100",
     secondary:
-      "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-700",
+      "bg-zinc-100 text-zinc-700 border border-zinc-200 hover:bg-zinc-200",
     outline:
-      "border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:border-zinc-400 dark:hover:border-zinc-500",
+      "border border-zinc-300 text-zinc-600 hover:border-zinc-400",
     sponsored:
-      "bg-amber-50 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border border-amber-300 dark:border-amber-800 font-bold",
+      "bg-amber-50 text-amber-800 border border-amber-300 font-bold",
   };
 
   const combinedClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;

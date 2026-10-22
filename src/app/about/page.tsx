@@ -22,48 +22,48 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ name: "About Us", href: "/about" }]} />
 
       <header className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 text-xs font-semibold border border-emerald-200 dark:border-emerald-800">
-          <Terminal className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
+          <Terminal className="w-3.5 h-3.5 text-emerald-600" />
           <span>About {siteConfig.name}</span>
         </div>
 
-        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-zinc-900 dark:text-white">
+        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight text-zinc-900">
           Empirical Engineering & AI Systems Publishing
         </h1>
 
-        <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed font-normal">
+        <p className="text-lg text-zinc-600 leading-relaxed font-normal">
           {siteConfig.name} is an independent technology publication founded to provide clear, reproducible software benchmarks, cloud architecture guides, and developer tooling analyses.
         </p>
       </header>
 
       {/* Core Mission Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-        <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-3">
-          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 flex items-center justify-center">
+        <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-3 shadow-2xs">
+          <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-200">
             <Target className="w-5 h-5" />
           </div>
-          <h3 className="font-semibold text-zinc-900 dark:text-white">Empirical Testing</h3>
-          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <h3 className="font-semibold text-zinc-900">Empirical Testing</h3>
+          <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
             We do not copy marketing bullets. Every tool reviewed is tested with actual monorepo code, real API latency, and stress workloads.
           </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-3">
-          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 flex items-center justify-center">
+        <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-3 shadow-2xs">
+          <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-200">
             <ShieldCheck className="w-5 h-5" />
           </div>
-          <h3 className="font-semibold text-zinc-900 dark:text-white">Editorial Integrity</h3>
-          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <h3 className="font-semibold text-zinc-900">Editorial Integrity</h3>
+          <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
             Our editorial opinions are independent. Commercial partnerships and affiliate relationships never influence review verdicts.
           </p>
         </div>
 
-        <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-3">
-          <div className="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-700 dark:text-teal-400 flex items-center justify-center">
+        <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-3 shadow-2xs">
+          <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center border border-teal-200">
             <Award className="w-5 h-5" />
           </div>
-          <h3 className="font-semibold text-zinc-900 dark:text-white">Global & India Context</h3>
-          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+          <h3 className="font-semibold text-zinc-900">Global & India Context</h3>
+          <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
             Bridging international developer compensation, remote taxation, GCC systems engineering, and global software architecture.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
       {/* Editorial Team */}
       <section className="space-y-6 pt-6">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white pb-3 border-b border-zinc-200 dark:border-zinc-800">
+        <h2 className="text-2xl font-semibold text-zinc-900 pb-3 border-b border-zinc-200">
           Editorial & Engineering Team
         </h2>
 
@@ -79,9 +79,9 @@ export default function AboutPage() {
           {authorList.map((author) => (
             <div
               key={author.slug}
-              className="p-6 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 flex items-start gap-4"
+              className="p-6 rounded-2xl bg-white border border-zinc-200 flex items-start gap-4 shadow-2xs"
             >
-              <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border border-zinc-300 dark:border-zinc-700 bg-zinc-200">
+              <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border border-zinc-300 bg-zinc-200">
                 <Image
                   src={author.avatar}
                   alt={author.name}
@@ -91,15 +91,15 @@ export default function AboutPage() {
                 />
               </div>
               <div className="space-y-1">
-                <h3 className="font-semibold text-zinc-900 dark:text-white">
-                  <Link href={`/author/${author.slug}`} className="hover:text-emerald-700 dark:hover:text-emerald-400">
+                <h3 className="font-semibold text-zinc-900">
+                  <Link href={`/author/${author.slug}`} className="hover:text-emerald-700">
                     {author.name}
                   </Link>
                 </h3>
-                <p className="text-xs text-emerald-700 dark:text-emerald-400 font-medium">
+                <p className="text-xs text-emerald-700 font-medium">
                   {author.title}
                 </p>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400 pt-1 leading-relaxed">
+                <p className="text-xs text-zinc-600 pt-1 leading-relaxed">
                   {author.bio}
                 </p>
               </div>
@@ -109,12 +109,12 @@ export default function AboutPage() {
       </section>
 
       {/* Editorial Contact Banner */}
-      <div className="p-8 rounded-3xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="p-8 rounded-3xl bg-zinc-100/80 border border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h3 className="font-semibold text-zinc-900 dark:text-white">
+          <h3 className="font-semibold text-zinc-900">
             Have a technical correction or story pitch?
           </h3>
-          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+          <p className="text-xs sm:text-sm text-zinc-600 mt-1">
             We welcome constructive peer review and technical benchmarks from engineers.
           </p>
         </div>

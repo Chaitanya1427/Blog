@@ -9,7 +9,7 @@ interface AuthorBioProps {
 
 export function AuthorBio({ author }: AuthorBioProps) {
   return (
-    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/50 p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+    <div className="rounded-2xl border border-zinc-200 bg-white p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center shadow-2xs">
       <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-emerald-500/20 bg-zinc-200">
         <Image
           src={author.avatar}
@@ -23,12 +23,12 @@ export function AuthorBio({ author }: AuthorBioProps) {
       <div className="space-y-2 flex-1">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
-            <h4 className="text-base font-semibold text-zinc-900 dark:text-white">
-              <Link href={`/author/${author.slug}`} className="hover:text-emerald-700 dark:hover:text-emerald-400">
+            <h4 className="text-base font-semibold text-zinc-900">
+              <Link href={`/author/${author.slug}`} className="hover:text-emerald-700 transition-colors">
                 {author.name}
               </Link>
             </h4>
-            <p className="text-xs text-emerald-700 dark:text-emerald-400 font-medium">
+            <p className="text-xs text-emerald-700 font-semibold">
               {author.title}
             </p>
           </div>
@@ -40,7 +40,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${author.name} on X (Twitter)`}
-                className="p-1.5 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
+                className="p-1.5 rounded-md hover:bg-zinc-100 text-zinc-500 hover:text-zinc-800 transition-colors"
               >
                 <XTwitterIcon className="w-4 h-4" />
               </a>
@@ -51,7 +51,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${author.name} on LinkedIn`}
-                className="p-1.5 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
+                className="p-1.5 rounded-md hover:bg-zinc-100 text-zinc-500 hover:text-zinc-800 transition-colors"
               >
                 <LinkedInIcon className="w-4 h-4" />
               </a>
@@ -62,7 +62,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${author.name} on GitHub`}
-                className="p-1.5 rounded-md hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200"
+                className="p-1.5 rounded-md hover:bg-zinc-100 text-zinc-500 hover:text-zinc-800 transition-colors"
               >
                 <GitHubIcon className="w-4 h-4" />
               </a>
@@ -70,7 +70,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
           </div>
         </div>
 
-        <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
           {author.bio}
         </p>
       </div>

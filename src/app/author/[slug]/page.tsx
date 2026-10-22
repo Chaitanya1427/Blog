@@ -64,7 +64,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
       <Breadcrumbs items={[{ name: author.name, href: `/author/${author.slug}` }]} />
 
       {/* Author Profile Header */}
-      <div className="p-8 sm:p-12 rounded-3xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-8">
+      <div className="p-8 sm:p-12 rounded-3xl bg-white border border-zinc-200 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-8">
         <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shrink-0 border-4 border-emerald-500/20 shadow-md bg-zinc-200">
           <Image
             src={author.avatar}
@@ -77,20 +77,20 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
         </div>
 
         <div className="space-y-4 text-center sm:text-left flex-1">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 text-xs font-semibold border border-emerald-200 dark:border-emerald-800">
-            <UserCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
+            <UserCheck className="w-3.5 h-3.5 text-emerald-600" />
             <span>Verified Author & Contributor</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
             {author.name}
           </h1>
 
-          <p className="text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+          <p className="text-sm font-semibold text-emerald-700">
             {author.title}
           </p>
 
-          <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-300 max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base text-zinc-600 max-w-2xl leading-relaxed">
             {author.bio}
           </p>
 
@@ -101,7 +101,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter Profile"
-                className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-emerald-600 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
               >
                 <XTwitterIcon className="w-4 h-4" />
               </a>
@@ -112,7 +112,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-emerald-600 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
               >
                 <LinkedInIcon className="w-4 h-4" />
               </a>
@@ -123,7 +123,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-emerald-600 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
               >
                 <GitHubIcon className="w-4 h-4" />
               </a>
@@ -134,7 +134,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
 
       {/* Author's Articles Section */}
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white pb-3 border-b border-zinc-200 dark:border-zinc-800">
+        <h2 className="text-2xl font-semibold text-zinc-900 pb-3 border-b border-zinc-200">
           Articles by {author.name} ({articles.length})
         </h2>
 

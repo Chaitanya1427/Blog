@@ -5,15 +5,15 @@ import { siteConfig } from "@/config/site";
 export default function NotFound() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-24 sm:py-32 text-center space-y-6">
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-50 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-400 font-semibold text-2xl border border-emerald-200 dark:border-emerald-800 shadow-sm">
+      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-700 font-semibold text-2xl border border-emerald-200 shadow-sm">
         404
       </div>
 
-      <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+      <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 tracking-tight">
         Page Not Found
       </h1>
 
-      <p className="text-zinc-600 dark:text-zinc-400 text-base max-w-lg mx-auto leading-relaxed font-normal">
+      <p className="text-zinc-600 text-base max-w-lg mx-auto leading-relaxed font-normal">
         The requested article or page could not be located. It may have been moved, updated, or does not exist.
       </p>
 
@@ -27,15 +27,15 @@ export default function NotFound() {
         </Link>
         <Link
           href="/search"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-700 font-semibold text-sm transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 font-semibold text-sm transition-colors"
         >
           <Search className="w-4 h-4" />
           <span>Search Articles</span>
         </Link>
       </div>
 
-      <div className="pt-10 border-t border-zinc-200 dark:border-zinc-800 max-w-md mx-auto">
-        <span className="text-xs uppercase font-semibold tracking-wider text-zinc-400 block mb-3">
+      <div className="pt-10 border-t border-zinc-200 max-w-md mx-auto">
+        <span className="text-xs uppercase font-semibold tracking-wider text-zinc-500 block mb-3">
           Popular Categories
         </span>
         <div className="flex flex-wrap justify-center gap-2">
@@ -43,7 +43,7 @@ export default function NotFound() {
             <Link
               key={topic.href}
               href={topic.href}
-              className="text-xs px-3 py-1 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
+              className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:text-emerald-700 transition-colors"
             >
               {topic.title}
             </Link>

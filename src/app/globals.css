@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #fafaf9;
   --foreground: #18181b;
@@ -14,22 +16,6 @@
   --accent: #10b981;
   --accent-light: #ecfdf5;
   --ring: #10b981;
-}
-
-[data-theme="dark"],
-.dark {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --card: #18181b;
-  --card-foreground: #fafafa;
-  --border: #27272a;
-  --muted: #27272a;
-  --muted-foreground: #a1a1aa;
-  --primary: #10b981;
-  --primary-foreground: #09090b;
-  --accent: #059669;
-  --accent-light: #064e3b;
-  --ring: #059669;
 }
 
 body {

@@ -18,41 +18,41 @@ export default function EditorialPolicyPage() {
       <Breadcrumbs items={[{ name: "Editorial Policy", href: "/editorial-policy" }]} />
 
       <header className="space-y-3">
-        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl font-semibold text-zinc-900">
           Editorial Policy & Testing Standards
         </h1>
-        <p className="text-sm text-zinc-500">
+        <p className="text-sm text-zinc-600">
           How we research, write, verify code, and use AI responsibly to create world-class engineering journalism.
         </p>
       </header>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 my-6">
-        <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2">
-          <Code2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-          <h3 className="font-semibold text-sm text-zinc-900 dark:text-white">Every Snippet Tested</h3>
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
+        <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
+          <Code2 className="w-5 h-5 text-emerald-600" />
+          <h3 className="font-semibold text-sm text-zinc-900">Every Snippet Tested</h3>
+          <p className="text-xs text-zinc-600">
             All code blocks in tutorials are compiled and executed in real environments before publication.
           </p>
         </div>
 
-        <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2">
-          <Cpu className="w-5 h-5 text-teal-600 dark:text-teal-400" />
-          <h3 className="font-semibold text-sm text-zinc-900 dark:text-white">Responsible AI Use</h3>
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
+        <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
+          <Cpu className="w-5 h-5 text-teal-600" />
+          <h3 className="font-semibold text-sm text-zinc-900">Responsible AI Use</h3>
+          <p className="text-xs text-zinc-600">
             AI assists our research and drafting, but human engineers direct, edit, verify, and stand behind every word.
           </p>
         </div>
 
-        <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2">
-          <BookCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-          <h3 className="font-semibold text-sm text-zinc-900 dark:text-white">Continuous Corrections</h3>
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
+        <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
+          <BookCheck className="w-5 h-5 text-emerald-600" />
+          <h3 className="font-semibold text-sm text-zinc-900">Continuous Corrections</h3>
+          <p className="text-xs text-zinc-600">
             When APIs change or errors are reported, we issue transparent timestamped updates rather than silent edits.
           </p>
         </div>
       </div>
 
-      <div className="prose prose-zinc dark:prose-invert max-w-none text-sm sm:text-base leading-relaxed space-y-6">
+      <div className="prose prose-zinc prose-headings:text-zinc-900 prose-p:text-zinc-700 max-w-none text-sm sm:text-base leading-relaxed space-y-6">
         <section>
           <h2>1. Practical, Reproducible Engineering</h2>
           <p>
