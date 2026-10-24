@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { Logo } from "@/components/ui/Logo";
+
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,6 +30,9 @@ export function MobileNav() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-6">
+              <div className="pb-4 border-b border-zinc-100">
+                <Logo size="sm" />
+              </div>
               <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 Navigation
               </div>

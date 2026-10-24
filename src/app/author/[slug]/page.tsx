@@ -13,6 +13,8 @@ interface AuthorPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const instant = false;
+
 export async function generateStaticParams() {
   const authors = getAllAuthors();
   return authors.map((author) => ({

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { Terminal, ShieldCheck } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import { GitHubIcon, LinkedInIcon, XTwitterIcon, YouTubeIcon } from "@/components/ui/Icons";
+import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   return (
@@ -10,18 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand info */}
           <div className="lg:col-span-2 space-y-4">
-            <Link
-              href="/"
-              className="flex items-center gap-2.5 font-semibold text-xl tracking-tight text-zinc-900"
-            >
-              <div className="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white shadow-2xs">
-                <Terminal className="w-4 h-4" />
-              </div>
-              <span className="flex items-center">
-                <span>{siteConfig.name}</span>
-                <span className="text-emerald-600 font-semibold ml-0.5">.</span>
-              </span>
-            </Link>
+            <Logo size="md" />
             <p className="text-sm leading-relaxed max-w-sm text-zinc-600">
               {siteConfig.description}
             </p>

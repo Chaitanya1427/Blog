@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="prism-top" x1="104" y1="72" x2="408" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#34D399" />
+      <stop offset="1" stopColor="#10B981" />
+    </linearGradient>
+    <linearGradient id="prism-right" x1="275" y1="184" x2="424" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#059669" />
+      <stop offset="1" stopColor="#047857" />
+    </linearGradient>
+    <linearGradient id="prism-left" x1="88" y1="184" x2="237" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#18181B" />
+      <stop offset="1" stopColor="#09090B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Facet (Navigational Apex / Mint Emerald) -->
+  <path d="M256 64L408 152L256 240L104 152L256 64Z" fill="url(#prism-top)" />
+
+  <!-- Left Facet (Obsidian Architectural Plane) -->
+  <path d="M88 180L236 264V424L88 336V180Z" fill="url(#prism-left)" />
+
+  <!-- Right Facet (Enterprise Forest Emerald Plane) -->
+  <path d="M276 264L424 180V336L276 424V264Z" fill="url(#prism-right)" />
+
+  <!-- Center Precision Spark Node -->
+  <circle cx="256" cy="240" r="20" fill="#FFFFFF" fillOpacity="0.9" />
+</svg>

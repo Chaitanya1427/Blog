@@ -4,32 +4,90 @@ import { getAllArticles, getAllCategories } from "@/lib/content";
 import { ArticleCard } from "@/components/article/ArticleCard";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { AdUnit } from "@/components/ads/AdUnit";
-import { Sparkles, ArrowRight, Cpu, Layers, BookOpen, Compass } from "lucide-react";
+import { EcosystemTicker } from "@/components/home/EcosystemTicker";
+import { TrendingRail } from "@/components/home/TrendingRail";
+import { EditorialTrustBar } from "@/components/home/EditorialTrustBar";
+import { TechRadar } from "@/components/home/TechRadar";
+import { CuratedPlaybooks } from "@/components/home/CuratedPlaybooks";
+import { AuthorsSpotlight } from "@/components/home/AuthorsSpotlight";
+import { LatestFeedSection } from "@/components/home/LatestFeedSection";
+import { ArrowRight, Cpu, Layers, BookOpen, Database, Compass, Flame } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { Article } from "@/types/content";
 
 export default async function HomePage() {
   const allArticles = await getAllArticles(); // Drafts automatically excluded
-  const featuredArticle = allArticles[0];
-  const secondaryFeatured = allArticles.slice(1, 3);
-  const latestArticles = allArticles.slice(3, 7);
 
-  // Group articles by key categories for topic-based sections
-  const aiArticles = allArticles.filter(
-    (a) => a.category.slug === "ai-tools" || a.category.slug === "ai-coding"
-  );
-  const comparisonArticles = allArticles.filter(
-    (a) => a.category.slug === "software-comparisons" || a.category.slug === "software-reviews"
-  );
-  const webDevArticles = allArticles.filter(
-    (a) => a.category.slug === "web-development" || a.category.slug === "hosting-and-deployment"
-  );
+  // STRICT DEDUPLICATION SYSTEM: Track displayed slugs so NO article or image is ever repeated!
+  const seenSlugs = new Set<string>();
+
+  // 1. Featured Lead Story (Hero Lead)
+  const featuredArticle = allArticles[0];
+  if (featuredArticle) {
+    seenSlugs.add(featuredArticle.slug);
+  }
+
+  // 2. Trending Rail (Top 4 most engaging stories, excluding featured)
+  const trendingArticles: Article[] = [];
+  for (const article of allArticles) {
+    if (!seenSlugs.has(article.slug) && trendingArticles.length < 4) {
+      trendingArticles.push(article);
+      seenSlugs.add(article.slug);
+    }
+  }
+
+  // 3. Topic Section: AI Tools & Agentic Coding (3 distinct articles)
+  const aiArticles: Article[] = [];
+  for (const article of allArticles) {
+    if (
+      !seenSlugs.has(article.slug) &&
+      (article.category.slug === "ai-tools" || article.category.slug === "ai-coding") &&
+      aiArticles.length < 3
+    ) {
+      aiArticles.push(article);
+      seenSlugs.add(article.slug);
+    }
+  }
+
+  // 4. Topic Section: Software Comparisons & Reviews (3 distinct articles)
+  const comparisonArticles: Article[] = [];
+  for (const article of allArticles) {
+    if (
+      !seenSlugs.has(article.slug) &&
+      (article.category.slug === "software-comparisons" ||
+        article.category.slug === "software-reviews") &&
+      comparisonArticles.length < 3
+    ) {
+      comparisonArticles.push(article);
+      seenSlugs.add(article.slug);
+    }
+  }
+
+  // 5. Topic Section: Web Development, Cloud & Databases (3 distinct articles)
+  const infraArticles: Article[] = [];
+  for (const article of allArticles) {
+    if (
+      !seenSlugs.has(article.slug) &&
+      (article.category.slug === "web-development" ||
+        article.category.slug === "hosting-and-deployment" ||
+        article.category.slug === "databases-and-backend" ||
+        article.category.slug === "automation-and-productivity") &&
+      infraArticles.length < 3
+    ) {
+      infraArticles.push(article);
+      seenSlugs.add(article.slug);
+    }
+  }
+
+  // 6. Remaining Articles for Continuous Latest Feed (All distinct, 0 repeats!)
+  const remainingArticles = allArticles.filter((article) => !seenSlugs.has(article.slug));
 
   const categories = getAllCategories();
 
   return (
-    <div className="space-y-16 sm:space-y-24 pb-16">
-      {/* Super-Premium Centered Hero Section with Real Architectural Photography */}
-      <section className="relative min-h-[560px] lg:min-h-[640px] flex items-center justify-center overflow-hidden border-b border-zinc-200 py-20 sm:py-28 px-4 sm:px-6 lg:px-8">
+    <div className="pb-20">
+      {/* 1. Full Frame 100vh Hero Section with Real Architectural Photography */}
+      <section className="relative w-full h-[calc(100vh-4rem)] min-h-[calc(100vh-4rem)] min-h-[580px] flex flex-col items-center justify-center overflow-hidden border-b border-zinc-200 px-4 sm:px-6 lg:px-8">
         {/* Real Architectural Campus Background Image - 100% Sharp & Unblurred */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -41,16 +99,11 @@ export default async function HomePage() {
             className="object-cover object-center"
           />
           {/* Subtle cinematic transparent scrim for crystal-clear readability without any blur */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-black/65" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/40 to-black/70" />
         </div>
 
-        {/* Centered Content Directly on Hero - NO BOX */}
+        {/* Centered Content Directly on Hero - Clean Editorial Typographic Hierarchy */}
         <div className="relative z-10 w-full max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-xs text-white text-xs font-semibold border border-white/30 shadow-sm">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Independent Engineering Publishing</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.15] max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">
             Architectural Insights, AI Tools &amp; Modern Web Infrastructure
           </h1>
@@ -59,7 +112,7 @@ export default async function HomePage() {
             Empirical benchmarks, step-by-step tutorials, and production deployment guides for software engineers, vibe coders, and technical founders.
           </p>
 
-          {/* Centered Topic Pills */}
+          {/* Centered Topic Navigation Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
             <span className="text-xs font-semibold text-zinc-300 uppercase tracking-wider mr-1 drop-shadow-xs">
               Explore:
@@ -75,34 +128,60 @@ export default async function HomePage() {
             ))}
           </div>
         </div>
+
+        {/* Bottom Scroll Indicator (100vh Full Frame Prompt) */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none select-none">
+          <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-zinc-300 drop-shadow-xs">
+            Scroll to explore
+          </span>
+          <div className="w-5 h-8 rounded-full border border-white/30 flex items-start justify-center p-1 backdrop-blur-xs">
+            <div className="w-1 h-2 rounded-full bg-emerald-400 animate-bounce" />
+          </div>
+        </div>
       </section>
 
-      {/* Featured Lead Story */}
+      {/* 2. Live Ecosystem Ticker (Real-Time Tech Pulse Strip) */}
+      <EcosystemTicker />
+
+      {/* Content wrapper with consistent spacing */}
+      <div className="space-y-16 sm:space-y-20 mt-16 sm:mt-20">
+
+      {/* 3. Editorial Lead Story & Trending Benchmarks Split Layout */}
       {featuredArticle && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
               <Compass className="w-5 h-5 text-emerald-600" />
-              <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-zinc-900">
-                Featured Analysis
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
+                Editorial Lead Story
               </h2>
+            </div>
+            <div className="flex items-center gap-1 text-xs font-semibold text-emerald-700">
+              <Flame className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+              <span>Verified Benchmark</span>
             </div>
           </div>
 
-          <ArticleCard article={featuredArticle} featured={true} />
-
-          {/* Secondary Featured Grid */}
-          {secondaryFeatured.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              {secondaryFeatured.map((article) => (
-                <ArticleCard key={article.slug} article={article} />
-              ))}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            {/* Lead Story (7 cols) */}
+            <div className="lg:col-span-7 flex flex-col">
+              <ArticleCard article={featuredArticle} featured={true} />
             </div>
-          )}
+
+            {/* Trending Rail (5 cols) */}
+            <div className="lg:col-span-5 flex flex-col">
+              <TrendingRail articles={trendingArticles} />
+            </div>
+          </div>
         </section>
       )}
 
-      {/* Responsive In-Content Ad Placement (Feature-flag controlled) */}
+      {/* 4. Enterprise Editorial Trust & Standards Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <EditorialTrustBar />
+      </div>
+
+      {/* 5. In-Feed Responsive Ad Placement (Feature-flag controlled) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AdUnit
           slotId={siteConfig.monetization.adsense.slotInArticleTop}
@@ -111,7 +190,7 @@ export default async function HomePage() {
         />
       </div>
 
-      {/* Topic-Based Section: AI Tools & Agents */}
+      {/* 6. Topic Deep Dive: AI Tools & Agentic Coding (All Unique Articles & Images!) */}
       {aiArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
@@ -121,7 +200,7 @@ export default async function HomePage() {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-semibold text-zinc-900">
-                  AI Tools & Agentic Coding
+                  AI Tools &amp; Agentic Coding
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-600">
                   Benchmarked coding assistants, context engines, and autonomous terminal workflows.
@@ -132,20 +211,25 @@ export default async function HomePage() {
               href="/category/ai-tools"
               className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
             >
-              <span>View all</span>
+              <span>View all AI</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {aiArticles.slice(0, 3).map((article) => (
+            {aiArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
         </section>
       )}
 
-      {/* Topic-Based Section: Software Comparisons & Reviews */}
+      {/* 7. Interactive 2026 Tech Radar Component */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <TechRadar />
+      </div>
+
+      {/* 8. Topic Deep Dive: Software Comparisons & Reviews (All Unique Articles & Images!) */}
       {comparisonArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
@@ -155,7 +239,7 @@ export default async function HomePage() {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-semibold text-zinc-900">
-                  Software Comparisons & Reviews
+                  Software Comparisons &amp; Reviews
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-600">
                   Head-to-head architectural showdowns and developer tooling evaluations.
@@ -166,21 +250,26 @@ export default async function HomePage() {
               href="/category/software-comparisons"
               className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
             >
-              <span>View all</span>
+              <span>View all comparisons</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {comparisonArticles.slice(0, 3).map((article) => (
+            {comparisonArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
         </section>
       )}
 
-      {/* Topic-Based Section: Web Development & Cloud Infrastructure */}
-      {webDevArticles.length > 0 && (
+      {/* 9. Curated Engineering Blueprints & Field Manuals */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <CuratedPlaybooks />
+      </div>
+
+      {/* 10. Topic Deep Dive: Web Development, Cloud & Infrastructure */}
+      {infraArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
             <div className="flex items-center gap-2.5">
@@ -189,10 +278,10 @@ export default async function HomePage() {
               </div>
               <div>
                 <h2 className="text-xl sm:text-2xl font-semibold text-zinc-900">
-                  Web Development & Deployment
+                  Web Development, Cloud &amp; Infrastructure
                 </h2>
                 <p className="text-xs sm:text-sm text-zinc-600">
-                  Full-stack Next.js, TypeScript architecture, and zero-downtime ops guides.
+                  Next.js App Router, Tailwind v4, distributed caching, and zero-downtime deployment.
                 </p>
               </div>
             </div>
@@ -200,47 +289,36 @@ export default async function HomePage() {
               href="/category/web-development"
               className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
             >
-              <span>View all</span>
+              <span>View all guides</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {webDevArticles.slice(0, 3).map((article) => (
+            {infraArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </div>
         </section>
       )}
 
-      {/* Latest Articles Section */}
-      {latestArticles.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
-            <h2 className="text-xl sm:text-2xl font-semibold text-zinc-900">
-              Latest Publications
-            </h2>
-            <Link
-              href="/category/ai-tools"
-              className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1"
-            >
-              <span>Explore all articles</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
+      {/* 11. Meet Our Editorial Architects (Author Spotlight) */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AuthorsSpotlight />
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {latestArticles.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
-          </div>
-        </section>
+      {/* 12. Continuous Latest Publications Feed (Filterable Tabs, 0 Duplicates!) */}
+      {remainingArticles.length > 0 && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <LatestFeedSection articles={remainingArticles} />
+        </div>
       )}
 
-      {/* Newsletter Dispatch Component */}
+      {/* 13. Enterprise Weekly Dispatch & Newsletter */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NewsletterForm />
       </div>
     </div>
+  </div>
   );
 }

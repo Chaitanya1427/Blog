@@ -10,6 +10,8 @@ interface TagPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const instant = false;
+
 export async function generateStaticParams() {
   const tags = await getAllTags();
   return tags.map((t) => ({

@@ -19,6 +19,8 @@ interface ArticlePageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const instant = false;
+
 export async function generateStaticParams() {
   const articles = await getAllArticles(); // Drafts automatically filtered
   return articles.map((article) => ({

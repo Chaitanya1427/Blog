@@ -11,6 +11,8 @@ interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const instant = false;
+
 export async function generateStaticParams() {
   const categories = getAllCategories();
   return categories.map((cat) => ({
@@ -65,11 +67,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       {/* Category Header */}
       <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-500/10 via-zinc-50 to-teal-500/5 border border-zinc-200 space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
-          <Layers className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Category Archive</span>
-        </div>
-
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight">
           {category.name}
         </h1>
