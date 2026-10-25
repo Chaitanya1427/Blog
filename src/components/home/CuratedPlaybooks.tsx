@@ -9,8 +9,8 @@ export function CuratedPlaybooks() {
       tag: "5-Part Deep Dive",
       icon: Code2,
       slug: "claude-3-7-vs-gpt-4-5-system-design",
-      gradient: "from-emerald-500/10 via-teal-500/5 to-transparent",
-      border: "border-emerald-200/80 hover:border-emerald-400",
+      gradient: "from-amber-500/10 via-yellow-500/5 to-transparent",
+      border: "border-amber-200/80 hover:border-amber-400",
     },
     {
       title: "Production Postgres & Vector Scale",
@@ -36,7 +36,7 @@ export function CuratedPlaybooks() {
     <div className="space-y-6">
       <div className="flex items-center justify-between pb-4 border-b border-zinc-200">
         <div className="flex items-center gap-2.5">
-          <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <div className="p-2 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
             <BookMarked className="w-5 h-5" />
           </div>
           <div>
@@ -61,15 +61,15 @@ export function CuratedPlaybooks() {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100/70 px-2.5 py-0.5 rounded-full border border-emerald-300/60">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-amber-900 bg-amber-100/80 px-2.5 py-0.5 rounded-full border border-amber-300/60">
                     {pb.tag}
                   </span>
-                  <div className="w-8 h-8 rounded-lg bg-white shadow-2xs border border-zinc-200 flex items-center justify-center text-zinc-700 group-hover:text-emerald-700 transition-colors">
+                  <div className="w-8 h-8 rounded-lg bg-white shadow-2xs border border-zinc-200 flex items-center justify-center text-zinc-700 group-hover:text-amber-700 transition-colors">
                     <Icon className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-zinc-900 group-hover:text-emerald-700 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-zinc-900 group-hover:text-amber-700 transition-colors mb-2 leading-snug">
                   {pb.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
@@ -77,7 +77,7 @@ export function CuratedPlaybooks() {
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-zinc-200/60 flex items-center justify-between text-xs font-semibold text-emerald-700 group-hover:text-emerald-800">
+              <div className="pt-6 mt-6 border-t border-zinc-200/60 flex items-center justify-between text-xs font-semibold text-amber-700 group-hover:text-amber-800">
                 <span>Start reading playbook</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>

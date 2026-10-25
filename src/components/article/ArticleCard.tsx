@@ -45,7 +45,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors tracking-tight">
               <Link href={`/blog/${article.slug}`} className="hover:underline">
                 {article.title}
               </Link>
@@ -71,7 +71,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
                 />
               </div>
               <div>
-                <p className="text-xs font-semibold text-zinc-900 group-hover/author:text-emerald-700 transition-colors">
+                <p className="text-xs font-semibold text-zinc-900 group-hover/author:text-amber-700 transition-colors">
                   {article.author.name}
                 </p>
                 <p className="text-[11px] text-zinc-500">
@@ -82,7 +82,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
 
             <Link
               href={`/blog/${article.slug}`}
-              className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
+              className="text-xs font-semibold text-amber-700 hover:text-amber-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
             >
               Read Article →
             </Link>
@@ -119,7 +119,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
             <span>{article.readingTime} min read</span>
           </div>
 
-          <h3 className="text-lg sm:text-xl font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors line-clamp-2 leading-snug">
+          <h3 className="text-lg sm:text-xl font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors line-clamp-2 leading-snug">
             <Link href={`/blog/${article.slug}`}>
               {article.title}
             </Link>
@@ -133,7 +133,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
         <div className="pt-4 mt-5 border-t border-zinc-100 flex items-center justify-between">
           <Link
             href={`/author/${article.author.slug}`}
-            className="flex items-center gap-2.5 text-xs text-zinc-700 hover:text-emerald-700"
+            className="flex items-center gap-2.5 text-xs text-zinc-700 hover:text-amber-700"
           >
             <div className="relative w-6 h-6 rounded-full overflow-hidden border border-zinc-200 bg-zinc-200">
               <Image
@@ -149,7 +149,7 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
 
           <Link
             href={`/blog/${article.slug}`}
-            className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 group-hover:underline"
+            className="text-xs font-semibold text-amber-700 hover:text-amber-800 group-hover:underline"
           >
             Read →
           </Link>

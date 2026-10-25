@@ -37,32 +37,32 @@ export function LogoMark({
       >
         <defs>
           <linearGradient id="prism-top" x1="6.5" y1="4.5" x2="25.5" y2="15.5" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#34D399" />
-            <stop offset="1" stopColor="#10B981" />
+            <stop stopColor="#FBBF24" />
+            <stop offset="1" stopColor="#D97706" />
           </linearGradient>
           <linearGradient id="prism-right" x1="17" y1="11.5" x2="26.5" y2="26.5" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#059669" />
-            <stop offset="1" stopColor="#047857" />
+            <stop stopColor="#B45309" />
+            <stop offset="1" stopColor="#78350F" />
           </linearGradient>
           <linearGradient id="prism-left" x1="5.5" y1="11.5" x2="15" y2="26.5" gradientUnits="userSpaceOnUse">
-            <stop stopColor={inverted ? "#FFFFFF" : "#18181B"} />
-            <stop offset="1" stopColor={inverted ? "#E4E4E7" : "#09090B"} />
+            <stop stopColor={inverted ? "#FFFFFF" : "#292524"} />
+            <stop offset="1" stopColor={inverted ? "#E7E5E4" : "#1C1917"} />
           </linearGradient>
         </defs>
 
-        {/* Top Facet (Navigational Apex / Mint Emerald) */}
+        {/* Top Facet (Radiant Gold / Amber Apex) */}
         <path
           d="M16 4L25.5 9.5L16 15L6.5 9.5L16 4Z"
           fill="url(#prism-top)"
         />
 
-        {/* Left Facet (Deep Obsidian Architectural Plane) */}
+        {/* Left Facet (Deep Espresso Architectural Plane) */}
         <path
           d="M5.5 11.2L14.8 16.5V26.5L5.5 21V11.2Z"
           fill="url(#prism-left)"
         />
 
-        {/* Right Facet (Enterprise Forest Emerald Plane) */}
+        {/* Right Facet (Cognac Bronze Brown Plane) */}
         <path
           d="M17.2 16.5L26.5 11.2V21L17.2 26.5V16.5Z"
           fill="url(#prism-right)"
@@ -98,12 +98,12 @@ export function Logo({
       {showWordmark && (
         <span
           className={`font-bold tracking-tight leading-none flex items-center font-sans ${textClasses[size]} ${
-            inverted ? "text-white" : "text-zinc-950"
+            inverted ? "text-white" : "text-stone-900"
           }`}
         >
           <span>Tech</span>
-          <span className="text-emerald-600 font-semibold ml-0.5">Pilot</span>
-          <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5 mb-0.5 group-hover:scale-125 transition-transform" />
+          <span className="text-amber-600 font-semibold ml-0.5">Pilot</span>
+          <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-500 ml-1.5 mb-0.5 group-hover:scale-125 transition-transform" />
         </span>
       )}
     </Link>

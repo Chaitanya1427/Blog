@@ -60,7 +60,7 @@ export function MobileNav() {
                       key={topic.href}
                       href={topic.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-xs px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:text-emerald-700 font-medium"
+                      className="text-xs px-2.5 py-1 rounded-md bg-stone-100 text-stone-700 hover:text-amber-700 font-medium"
                     >
                       {topic.title}
                     </Link>

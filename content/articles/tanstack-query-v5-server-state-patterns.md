@@ -123,7 +123,7 @@ export function MetricsDashboardClient() {
   return (
     <div className="relative rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs">
       {isFetching && (
-        <span className="absolute top-4 right-4 text-xs font-mono text-emerald-600 animate-pulse">
+        <span className="absolute top-4 right-4 text-xs font-mono text-amber-600 animate-pulse">
           Syncing...
         </span>
       )}
@@ -134,7 +134,7 @@ export function MetricsDashboardClient() {
         </div>
         <div className="p-4 rounded-xl bg-zinc-50 border border-zinc-100">
           <p className="text-xs font-medium text-zinc-500 uppercase">INP Score</p>
-          <p className="text-2xl font-bold text-emerald-600 mt-1">{data?.inpMedian} ms</p>
+          <p className="text-2xl font-bold text-amber-600 mt-1">{data?.inpMedian} ms</p>
         </div>
         <div className="p-4 rounded-xl bg-zinc-50 border border-zinc-100">
           <p className="text-xs font-medium text-zinc-500 uppercase">Deployment Cadence</p>

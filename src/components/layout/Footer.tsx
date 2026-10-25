@@ -73,7 +73,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="hover:text-emerald-700 transition-colors"
+                    className="hover:text-amber-700 transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -92,7 +92,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="hover:text-emerald-700 transition-colors"
+                    className="hover:text-amber-700 transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -111,7 +111,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="hover:text-emerald-700 transition-colors"
+                    className="hover:text-amber-700 transition-colors"
                   >
                     {item.title}
                   </Link>
@@ -124,7 +124,7 @@ export function Footer() {
         {/* Affiliate & Editorial Disclosure Note */}
         <div className="mt-12 pt-8 border-t border-zinc-200 text-xs text-zinc-500 leading-relaxed flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
+            <ShieldCheck className="w-4 h-4 text-amber-600 shrink-0" />
             <span>
               Independent editorial coverage. Software evaluations are conducted by our team without vendor interference.
             </span>

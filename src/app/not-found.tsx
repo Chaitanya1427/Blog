@@ -5,7 +5,7 @@ import { siteConfig } from "@/config/site";
 export default function NotFound() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-24 sm:py-32 text-center space-y-6">
-      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-700 font-semibold text-2xl border border-emerald-200 shadow-sm">
+      <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-50 text-amber-800 font-semibold text-2xl border border-amber-200 shadow-sm">
         404
       </div>
 
@@ -20,7 +20,7 @@ export default function NotFound() {
       <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-semibold text-sm transition-colors shadow-sm"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm transition-colors shadow-sm"
         >
           <Home className="w-4 h-4" />
           <span>Back to Homepage</span>
@@ -43,7 +43,7 @@ export default function NotFound() {
             <Link
               key={topic.href}
               href={topic.href}
-              className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:text-emerald-700 transition-colors"
+              className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:text-amber-700 transition-colors"
             >
               {topic.title}
             </Link>

@@ -17,7 +17,7 @@ interface RadarItem {
 const RADAR_DATA: Record<RadarCategory, { label: string; badgeColor: string; description: string; items: RadarItem[] }> = {
   adopt: {
     label: "Adopt",
-    badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    badgeColor: "bg-amber-50 text-amber-800 border-amber-200",
     description: "Industry-proven, battle-tested technologies with strong production track records and high developer ergonomics.",
     items: [
       {
@@ -168,7 +168,7 @@ export function TechRadar() {
     <div className="bg-white rounded-3xl border border-zinc-200/90 p-6 sm:p-8 lg:p-10 shadow-xs">
       <div className="flex flex-col md:flex-row md:items-end justify-between pb-6 border-b border-zinc-100 gap-4 mb-6">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 text-xs font-semibold mb-2">
             <Radar className="w-3.5 h-3.5" />
             <span>Quarterly Architectural Radar</span>
           </div>
@@ -195,7 +195,7 @@ export function TechRadar() {
                     : "text-zinc-600 hover:text-zinc-900"
                 }`}
               >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? "text-emerald-600" : "text-zinc-400"}`} />
+                <Icon className={`w-3.5 h-3.5 ${isActive ? "text-amber-600" : "text-zinc-400"}`} />
                 <span>{tab.label}</span>
               </button>
             );
@@ -216,7 +216,7 @@ export function TechRadar() {
         {activeData.items.map((item, idx) => (
           <div
             key={idx}
-            className="p-5 rounded-2xl border border-zinc-200/80 bg-white hover:border-emerald-300 hover:shadow-md transition-all group flex flex-col justify-between"
+            className="p-5 rounded-2xl border border-zinc-200/80 bg-white hover:border-amber-300 hover:shadow-md transition-all group flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between mb-2">
@@ -227,11 +227,11 @@ export function TechRadar() {
                   {item.status}
                 </span>
               </div>
-              <h4 className="text-base font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors">
+              <h4 className="text-base font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors">
                 {item.slug ? (
                   <Link href={`/blog/${item.slug}`} className="flex items-center gap-1">
                     <span>{item.name}</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400 group-hover:text-emerald-600 transition-colors" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-zinc-400 group-hover:text-amber-600 transition-colors" />
                   </Link>
                 ) : (
                   item.name
@@ -246,7 +246,7 @@ export function TechRadar() {
               <div className="pt-3 mt-3 border-t border-zinc-100">
                 <Link
                   href={`/blog/${item.slug}`}
-                  className="text-[11px] font-semibold text-emerald-700 hover:text-emerald-800 flex items-center gap-1"
+                  className="text-[11px] font-semibold text-amber-700 hover:text-amber-800 flex items-center gap-1"
                 >
                   Read benchmark breakdown →
                 </Link>

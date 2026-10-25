@@ -19,7 +19,7 @@ export function Badge({
 
   const variantClasses = {
     primary:
-      "bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100",
+      "bg-amber-50 text-amber-900 border border-amber-200 hover:bg-amber-100/80",
     secondary:
       "bg-zinc-100 text-zinc-700 border border-zinc-200 hover:bg-zinc-200",
     outline:

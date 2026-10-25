@@ -135,21 +135,21 @@ export function SearchModal() {
                       onClick={() => setIsOpen(false)}
                       className="group flex items-start gap-3 p-3 rounded-lg hover:bg-zinc-100 transition-colors"
                     >
-                      <FileText className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <FileText className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xs font-semibold text-emerald-700 uppercase tracking-wider">
+                          <span className="text-xs font-semibold text-amber-700 uppercase tracking-wider">
                             {item.category.name}
                           </span>
                         </div>
-                        <h4 className="text-sm font-semibold text-zinc-900 group-hover:text-emerald-700 line-clamp-1">
+                        <h4 className="text-sm font-semibold text-zinc-900 group-hover:text-amber-700 line-clamp-1">
                           {item.title}
                         </h4>
                         <p className="text-xs text-zinc-500 line-clamp-1 mt-0.5">
                           {item.excerpt}
                         </p>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-1 group-hover:text-emerald-600 transition-all shrink-0 mt-1" />
+                      <ArrowRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-1 group-hover:text-amber-600 transition-all shrink-0 mt-1" />
                     </Link>
                   ))}
                 </div>
@@ -182,7 +182,7 @@ export function SearchModal() {
                 <button
                   type="button"
                   onClick={handleFullSearch}
-                  className="text-emerald-700 font-medium hover:underline flex items-center gap-1 cursor-pointer"
+                  className="text-amber-700 font-medium hover:underline flex items-center gap-1 cursor-pointer"
                 >
                   View all results <ArrowRight className="w-3.5 h-3.5" />
                 </button>

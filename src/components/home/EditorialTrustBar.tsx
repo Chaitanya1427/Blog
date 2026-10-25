@@ -27,13 +27,13 @@ export function EditorialTrustBar() {
   return (
     <div className="bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-950 rounded-3xl p-6 sm:p-8 lg:p-10 text-white border border-zinc-800 shadow-xl relative overflow-hidden">
       {/* Background ambient glow */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-600/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-600/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10">
         <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-8 border-b border-zinc-800 gap-4">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold mb-2">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>Editorial Standards</span>
             </div>
@@ -51,7 +51,7 @@ export function EditorialTrustBar() {
             const Icon = item.icon;
             return (
               <div key={idx} className="space-y-3">
-                <div className="w-10 h-10 rounded-xl bg-zinc-800/80 border border-zinc-700 flex items-center justify-center text-emerald-400">
+                <div className="w-10 h-10 rounded-xl bg-zinc-800/80 border border-zinc-700 flex items-center justify-center text-amber-400">
                   <Icon className="w-5 h-5" />
                 </div>
                 <h4 className="text-sm font-semibold text-zinc-100">

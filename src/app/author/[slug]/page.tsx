@@ -67,7 +67,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
 
       {/* Author Profile Header */}
       <div className="p-8 sm:p-12 rounded-3xl bg-white border border-zinc-200 shadow-sm flex flex-col sm:flex-row items-center sm:items-start gap-8">
-        <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shrink-0 border-4 border-emerald-500/20 shadow-md bg-zinc-200">
+        <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shrink-0 border-4 border-amber-500/20 shadow-md bg-zinc-200">
           <Image
             src={author.avatar}
             alt={author.name}
@@ -79,8 +79,8 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
         </div>
 
         <div className="space-y-4 text-center sm:text-left flex-1">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
-            <UserCheck className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 text-amber-900 text-xs font-semibold border border-amber-200">
+            <UserCheck className="w-3.5 h-3.5 text-amber-600" />
             <span>Verified Author & Contributor</span>
           </div>
 
@@ -88,7 +88,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
             {author.name}
           </h1>
 
-          <p className="text-sm font-semibold text-emerald-700">
+          <p className="text-sm font-semibold text-amber-700">
             {author.title}
           </p>
 
@@ -103,7 +103,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter Profile"
-                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-amber-700 transition-colors"
               >
                 <XTwitterIcon className="w-4 h-4" />
               </a>
@@ -114,7 +114,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
-                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-amber-700 transition-colors"
               >
                 <LinkedInIcon className="w-4 h-4" />
               </a>
@@ -125,7 +125,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub Profile"
-                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-emerald-700 transition-colors"
+                className="p-2 rounded-lg bg-zinc-100 text-zinc-600 hover:text-amber-700 transition-colors"
               >
                 <GitHubIcon className="w-4 h-4" />
               </a>

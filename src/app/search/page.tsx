@@ -52,19 +52,19 @@ async function SearchResults({ searchParams }: SearchParamsProps) {
           <div className="pt-2 flex flex-wrap justify-center gap-2">
             <Link
               href="/category/ai-tools"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-amber-700 font-medium"
             >
               AI Tools
             </Link>
             <Link
               href="/category/ai-coding"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-amber-700 font-medium"
             >
               AI Coding
             </Link>
             <Link
               href="/category/software-comparisons"
-              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-emerald-700 font-medium"
+              className="text-xs px-3 py-1.5 rounded-lg bg-white border border-zinc-200 text-zinc-700 hover:text-amber-700 font-medium"
             >
               Software Comparisons
             </Link>
@@ -84,7 +84,7 @@ async function SearchResults({ searchParams }: SearchParamsProps) {
 function SearchLoading() {
   return (
     <div className="p-12 text-center text-zinc-500 text-sm flex items-center justify-center gap-2">
-      <Loader2 className="w-5 h-5 animate-spin text-emerald-600" />
+      <Loader2 className="w-5 h-5 animate-spin text-amber-600" />
       <span>Searching article repository...</span>
     </div>
   );
@@ -106,11 +106,11 @@ export default function SearchPage({ searchParams }: SearchParamsProps) {
             type="search"
             name="q"
             placeholder="Search keywords: Next.js, Supabase, Cursor, Docker..."
-            className="w-full pl-12 pr-28 py-3.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-2xs"
+            className="w-full pl-12 pr-28 py-3.5 rounded-xl border border-zinc-300 bg-white text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-2xs"
           />
           <button
             type="submit"
-            className="absolute right-2 px-5 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white font-semibold text-xs transition-colors cursor-pointer"
+            className="absolute right-2 px-5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-xs transition-colors cursor-pointer"
           >
             Search
           </button>

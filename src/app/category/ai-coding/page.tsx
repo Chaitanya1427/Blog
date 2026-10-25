@@ -71,7 +71,7 @@ export default async function AICodingPage() {
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 Refactor Pass Rate
               </span>
-              <p className="text-2xl font-bold text-emerald-600">94.2% Monorepo</p>
+              <p className="text-2xl font-bold text-amber-600">94.2% Monorepo</p>
             </div>
             <div className="space-y-1">
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
@@ -96,7 +96,7 @@ export default async function AICodingPage() {
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
               Featured Architectural Analysis
             </h2>
-            <span className="text-xs font-semibold text-emerald-700">
+            <span className="text-xs font-semibold text-amber-800">
               Lead Masterclass
             </span>
           </div>
@@ -119,7 +119,7 @@ export default async function AICodingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 01
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -131,7 +131,7 @@ export default async function AICodingPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 02
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -143,7 +143,7 @@ export default async function AICodingPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 03
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -155,7 +155,7 @@ export default async function AICodingPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 04
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -167,7 +167,7 @@ export default async function AICodingPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 05
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -222,7 +222,7 @@ export default async function AICodingPage() {
                 Empirical scores across 40-step multi-file refactoring tests in an isolated 45,000-line TypeScript repository.
               </p>
             </div>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 shrink-0">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 shrink-0">
               Updated March 2026
             </span>
           </div>
@@ -243,17 +243,17 @@ export default async function AICodingPage() {
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3 px-4 font-semibold text-zinc-950">Claude Code (Anthropic)</td>
                   <td className="py-3 px-4">Terminal CLI Native</td>
-                  <td className="py-3 px-4 font-semibold text-emerald-700">94.2% (Tier 1)</td>
+                  <td className="py-3 px-4 font-semibold text-amber-800">94.2% (Tier 1)</td>
                   <td className="py-3 px-4">Git aware + sub-AST</td>
-                  <td className="py-3 px-4 font-semibold text-emerald-700">Native Stdio/SSE</td>
+                  <td className="py-3 px-4 font-semibold text-amber-800">Native Stdio/SSE</td>
                   <td className="py-3 px-4">Interactive confirmation</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3 px-4 font-semibold text-zinc-950">Cursor</td>
                   <td className="py-3 px-4">Forked VS Code IDE</td>
-                  <td className="py-3 px-4 font-semibold text-emerald-700">91.8% (Tier 1)</td>
+                  <td className="py-3 px-4 font-semibold text-amber-800">91.8% (Tier 1)</td>
                   <td className="py-3 px-4">Embeddings + AST</td>
-                  <td className="py-3 px-4 font-semibold text-emerald-700">Supported</td>
+                  <td className="py-3 px-4 font-semibold text-amber-800">Supported</td>
                   <td className="py-3 px-4">Local host execution</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
@@ -295,7 +295,7 @@ export default async function AICodingPage() {
               <Link
                 key={author.slug}
                 href={`/author/${author.slug}`}
-                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-emerald-300 hover:shadow-md transition-all group flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-amber-300 hover:shadow-md transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3.5 mb-3">
@@ -309,10 +309,10 @@ export default async function AICodingPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors text-sm">
+                      <h3 className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors text-sm">
                         {author.name}
                       </h3>
-                      <p className="text-[11px] text-emerald-700 font-medium">
+                      <p className="text-[11px] text-amber-700 font-medium">
                         {author.title}
                       </p>
                     </div>
@@ -322,7 +322,7 @@ export default async function AICodingPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700 group-hover:text-emerald-800">
+                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-700 group-hover:text-amber-800">
                   <span>View author guides</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

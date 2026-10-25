@@ -28,27 +28,27 @@ export default function ContactPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-3 shadow-2xs">
-          <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-200">
+          <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
             <Mail className="w-5 h-5" />
           </div>
           <h3 className="font-semibold text-zinc-900 text-sm">Editorial Inquiries</h3>
           <p className="text-xs text-zinc-600">
             For code corrections, source updates, or story tips.
           </p>
-          <p className="text-xs font-mono text-emerald-700 pt-1 font-semibold">
+          <p className="text-xs font-mono text-amber-700 pt-1 font-semibold">
             editor@techpilot.dev
           </p>
         </div>
 
         <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-3 shadow-2xs">
-          <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center border border-teal-200">
+          <div className="w-10 h-10 rounded-xl bg-amber-100/60 text-amber-800 flex items-center justify-center border border-amber-200">
             <Briefcase className="w-5 h-5" />
           </div>
           <h3 className="font-semibold text-zinc-900 text-sm">Sponsorships & Ads</h3>
           <p className="text-xs text-zinc-600">
             For transparent sponsored articles and display ads.
           </p>
-          <p className="text-xs font-mono text-teal-700 pt-1 font-semibold">
+          <p className="text-xs font-mono text-amber-700 pt-1 font-semibold">
             partnerships@techpilot.dev
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function ContactPage() {
       {/* Editorial Standards Notice */}
       <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200 text-xs text-zinc-600 space-y-2">
         <div className="flex items-center gap-2 font-semibold text-zinc-900">
-          <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+          <CheckCircle2 className="w-4 h-4 text-amber-600" />
           <span>Notice Regarding Paid Links and Ranking Guarantees</span>
         </div>
         <p className="leading-relaxed">

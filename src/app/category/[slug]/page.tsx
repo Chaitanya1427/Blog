@@ -66,7 +66,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       />
 
       {/* Category Header */}
-      <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-500/10 via-zinc-50 to-teal-500/5 border border-zinc-200 space-y-4">
+      <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-amber-500/10 via-amber-50/30 to-yellow-500/5 border border-amber-200/80 space-y-4">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-zinc-900 tracking-tight">
           {category.name}
         </h1>

@@ -61,7 +61,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
           <div>
             <Link
               href={`/author/${article.author.slug}`}
-              className="font-semibold text-sm text-zinc-900 hover:text-emerald-700 transition-colors"
+              className="font-semibold text-sm text-zinc-900 hover:text-amber-700 transition-colors"
             >
               {article.author.name}
             </Link>
@@ -73,7 +73,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
               {article.updatedAt && (
                 <>
                   <span>•</span>
-                  <span className="flex items-center gap-1 text-emerald-700 font-semibold">
+                  <span className="flex items-center gap-1 text-amber-700 font-semibold">
                     <RefreshCw className="w-3 h-3" />
                     <span>Updated {formatDate(article.updatedAt)}</span>
                   </span>

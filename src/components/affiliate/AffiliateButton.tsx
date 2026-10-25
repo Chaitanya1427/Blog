@@ -17,10 +17,10 @@ export function AffiliateButton({
   variant = "primary",
 }: AffiliateButtonProps) {
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer shadow-xs";
+    "inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer shadow-xs";
 
   const variantClasses = {
-    primary: "bg-emerald-700 hover:bg-emerald-600 text-white shadow-emerald-700/20",
+    primary: "bg-amber-600 hover:bg-amber-500 text-white shadow-amber-600/20",
     secondary:
       "bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300",
   };

@@ -13,7 +13,7 @@ export function FaqSection({ faqs }: FaqSectionProps) {
     <section className="my-12 p-6 sm:p-8 rounded-2xl bg-zinc-50 border border-zinc-200">
       <FaqJsonLd faqs={faqs} />
       <div className="flex items-center gap-2 mb-6">
-        <HelpCircle className="w-5 h-5 text-emerald-600" />
+        <HelpCircle className="w-5 h-5 text-amber-600" />
         <h3 className="text-xl font-semibold text-zinc-900">
           Frequently Asked Questions
         </h3>

@@ -27,9 +27,9 @@ export default function AffiliateDisclosurePage() {
       </header>
 
       {/* Primary Disclosure Callout Box */}
-      <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 space-y-3">
+      <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 space-y-3">
         <div className="flex items-center gap-2 font-semibold text-sm">
-          <ShieldCheck className="w-5 h-5 text-emerald-600" />
+          <ShieldCheck className="w-5 h-5 text-amber-600" />
           <span>Our Transparent Promise to Readers</span>
         </div>
         <p className="text-xs sm:text-sm leading-relaxed">

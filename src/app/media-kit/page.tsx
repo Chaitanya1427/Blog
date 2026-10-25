@@ -19,8 +19,8 @@ export default function MediaKitPage() {
       <Breadcrumbs items={[{ name: "Media Kit", href: "/media-kit" }]} />
 
       <header className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
-          <Award className="w-3.5 h-3.5 text-emerald-600" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-900 text-xs font-semibold border border-amber-200">
+          <Award className="w-3.5 h-3.5 text-amber-600" />
           <span>Partnerships & Sponsorships</span>
         </div>
 
@@ -36,7 +36,7 @@ export default function MediaKitPage() {
       {/* Audience Demographics Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <Users className="w-5 h-5 text-emerald-600" />
+          <Users className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-zinc-900">Senior Engineers</h3>
           <p className="text-xs text-zinc-600 leading-relaxed">
             Staff engineers, full-stack builders, and technical founders actively choosing tools and cloud providers.
@@ -44,7 +44,7 @@ export default function MediaKitPage() {
         </div>
 
         <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <Eye className="w-5 h-5 text-teal-600" />
+          <Eye className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-zinc-900">Global Reach</h3>
           <p className="text-xs text-zinc-600 leading-relaxed">
             High concentration of technical readers across the US, India, UK, Germany, Canada, and Singapore.
@@ -52,7 +52,7 @@ export default function MediaKitPage() {
         </div>
 
         <div className="p-6 rounded-2xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <Mail className="w-5 h-5 text-emerald-600" />
+          <Mail className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-zinc-900">High Intent</h3>
           <p className="text-xs text-zinc-600 leading-relaxed">
             Readers seeking solutions for deployment, database migrations, and autonomous coding workflows.
@@ -68,7 +68,7 @@ export default function MediaKitPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200 space-y-4">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-700">
+            <span className="text-xs font-semibold uppercase tracking-wider text-amber-800">
               Format A
             </span>
             <h3 className="text-xl font-semibold text-zinc-900">
@@ -79,22 +79,22 @@ export default function MediaKitPage() {
             </p>
             <ul className="text-xs space-y-1.5 text-zinc-600">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Permanent publication on TechPilot</span>
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Prominent &ldquo;Sponsored&rdquo; badge transparency</span>
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Featured in weekly engineering newsletter</span>
               </li>
             </ul>
           </div>
 
           <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200 space-y-4">
-            <span className="text-xs font-semibold uppercase tracking-wider text-teal-700">
+            <span className="text-xs font-semibold uppercase tracking-wider text-amber-800">
               Format B
             </span>
             <h3 className="text-xl font-semibold text-zinc-900">
@@ -105,15 +105,15 @@ export default function MediaKitPage() {
             </p>
             <ul className="text-xs space-y-1.5 text-zinc-600">
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Exclusive single sponsor per issue</span>
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Direct UTM click-through tracking</span>
               </li>
               <li className="flex items-center gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+                <Check className="w-3.5 h-3.5 text-amber-600" />
                 <span>Audience of active full-stack developers</span>
               </li>
             </ul>
@@ -122,16 +122,16 @@ export default function MediaKitPage() {
       </section>
 
       {/* Sponsorship Contact Box */}
-      <div className="p-8 rounded-2xl bg-gradient-to-r from-emerald-700 to-teal-800 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-emerald-600/30">
+      <div className="p-8 rounded-2xl bg-gradient-to-r from-stone-900 via-amber-950 to-stone-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-amber-500/30">
         <div>
           <h3 className="text-xl font-semibold">Ready to discuss a partnership?</h3>
-          <p className="text-xs sm:text-sm text-emerald-100 mt-1 max-w-md">
+          <p className="text-xs sm:text-sm text-amber-200/80 mt-1 max-w-md">
             Reach out with your product overview and target launch timeline. We typically reply within 24 hours.
           </p>
         </div>
         <Link
           href="/contact"
-          className="px-6 py-3 rounded-xl bg-white text-emerald-900 font-semibold text-xs hover:bg-emerald-50 transition-colors shadow-md shrink-0"
+          className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold text-xs transition-colors shadow-md shrink-0"
         >
           Inquire About Sponsorships
         </Link>

@@ -60,13 +60,13 @@ export function ShareButtons({ title, url }: ShareButtonsProps) {
         className="p-2 rounded-lg border border-zinc-200 hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900 transition-colors relative cursor-pointer shadow-2xs"
       >
         {copied ? (
-          <Check className="w-4 h-4 text-emerald-500" />
+          <Check className="w-4 h-4 text-amber-600" />
         ) : (
           <LinkIcon className="w-4 h-4" />
         )}
       </button>
       {copied && (
-        <span className="text-xs text-emerald-500 font-medium animate-in fade-in">
+        <span className="text-xs text-amber-600 font-medium animate-in fade-in">
           Copied!
         </span>
       )}

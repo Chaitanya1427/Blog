@@ -73,7 +73,7 @@ export default async function SoftwareComparisonsPage() {
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 Decision Framework
               </span>
-              <p className="text-2xl font-bold text-emerald-600">4-Quadrant Audit</p>
+              <p className="text-2xl font-bold text-amber-600">4-Quadrant Audit</p>
             </div>
             <div className="space-y-1">
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
@@ -98,7 +98,7 @@ export default async function SoftwareComparisonsPage() {
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
               Featured Architectural Showdown
             </h2>
-            <span className="text-xs font-semibold text-emerald-700">
+            <span className="text-xs font-semibold text-amber-800">
               Lead Comparison
             </span>
           </div>
@@ -121,7 +121,7 @@ export default async function SoftwareComparisonsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 01
               </div>
               <h3 className="font-semibold text-zinc-900 text-base">
@@ -133,7 +133,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 02
               </div>
               <h3 className="font-semibold text-zinc-900 text-base">
@@ -145,7 +145,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 03
               </div>
               <h3 className="font-semibold text-zinc-900 text-base">
@@ -157,7 +157,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-6 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 04
               </div>
               <h3 className="font-semibold text-zinc-900 text-base">
@@ -182,7 +182,7 @@ export default async function SoftwareComparisonsPage() {
               Compare competing technologies head-to-head across empirical benchmarks, trade-offs, and deciding factors.
             </p>
           </div>
-          <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 shrink-0">
+          <span className="text-xs font-mono text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 shrink-0">
             Updated March 2026
           </span>
         </div>
@@ -231,7 +231,7 @@ export default async function SoftwareComparisonsPage() {
                 Executive architectural comparison across primary trade-offs, migration friction, and recommended enterprise choices.
               </p>
             </div>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 shrink-0">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 shrink-0">
               Q1 2026 Audit
             </span>
           </div>
@@ -252,57 +252,57 @@ export default async function SoftwareComparisonsPage() {
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">TypeScript ORMs</td>
                   <td className="py-3.5 px-4">Drizzle ORM vs Prisma</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">12ms vs 34ms query exec</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">12ms vs 34ms query exec</td>
                   <td className="py-3.5 px-4 text-amber-700 font-medium">Medium (Schema syntax)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">Drizzle (Serverless)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">Drizzle (Serverless)</td>
                   <td className="py-3.5 px-4">Manual relation joins vs Rust engine overhead</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Backend-as-a-Service</td>
                   <td className="py-3.5 px-4">Supabase vs Firebase</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Open Postgres vs NoSQL</td>
-                  <td className="py-3.5 px-4 text-emerald-700 font-medium">Low (Standard SQL)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">Supabase (Relational)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Open Postgres vs NoSQL</td>
+                  <td className="py-3.5 px-4 text-amber-800 font-medium">Low (Standard SQL)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">Supabase (Relational)</td>
                   <td className="py-3.5 px-4">SQL schema discipline vs rapid NoSQL prototyping</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">JavaScript Runtimes</td>
                   <td className="py-3.5 px-4">Bun 1.2 vs Node.js 22 LTS</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">4.8x faster install / test</td>
-                  <td className="py-3.5 px-4 text-emerald-700 font-medium">Low (Drop-in Node API)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">Bun (Dev) / Node (Prod)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">4.8x faster install / test</td>
+                  <td className="py-3.5 px-4 text-amber-800 font-medium">Low (Drop-in Node API)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">Bun (Dev) / Node (Prod)</td>
                   <td className="py-3.5 px-4">Developer ergonomics vs long-term LTS enterprise SLAs</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Data Analytics &amp; OLAP</td>
                   <td className="py-3.5 px-4">ClickHouse vs PostgreSQL</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">38ms vs 4,820ms on 100M rows</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">38ms vs 4,820ms on 100M rows</td>
                   <td className="py-3.5 px-4 text-rose-700 font-medium">High (Columnar schema)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">ClickHouse (Analytics)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">ClickHouse (Analytics)</td>
                   <td className="py-3.5 px-4">15x storage compression vs transactional ACID updates</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Message Brokers</td>
                   <td className="py-3.5 px-4">Apache Kafka vs Redis Streams</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">185k msgs/s vs 0.82ms latency</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">185k msgs/s vs 0.82ms latency</td>
                   <td className="py-3.5 px-4 text-amber-700 font-medium">Medium (Consumer group APIs)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">Kafka (Scale) / Redis (Fast)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">Kafka (Scale) / Redis (Fast)</td>
                   <td className="py-3.5 px-4">Multi-day disk replay vs in-memory operational simplicity</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">API Layer Architecture</td>
                   <td className="py-3.5 px-4">tRPC v11 vs GraphQL vs REST</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">0s codegen / 2.8KB bundle</td>
-                  <td className="py-3.5 px-4 text-emerald-700 font-medium">Low (TypeScript Native)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">tRPC (Monorepos)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">0s codegen / 2.8KB bundle</td>
+                  <td className="py-3.5 px-4 text-amber-800 font-medium">Low (TypeScript Native)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">tRPC (Monorepos)</td>
                   <td className="py-3.5 px-4">Full-stack monorepo lock-in vs multi-client public APIs</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Monorepo Orchestration</td>
                   <td className="py-3.5 px-4">Turborepo 2.0 vs Nx 20</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">84ms graph resolution</td>
-                  <td className="py-3.5 px-4 text-emerald-700 font-medium">Low (Standard workspaces)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">Turborepo (Zero Config)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">84ms graph resolution</td>
+                  <td className="py-3.5 px-4 text-amber-800 font-medium">Low (Standard workspaces)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">Turborepo (Zero Config)</td>
                   <td className="py-3.5 px-4">Lightweight task caching vs enterprise module boundaries</td>
                 </tr>
               </tbody>
@@ -325,7 +325,7 @@ export default async function SoftwareComparisonsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Zero Sponsor Influence</h3>
               </div>
@@ -335,7 +335,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Identical Bare Metal</h3>
               </div>
@@ -345,7 +345,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Real Production Workloads</h3>
               </div>
@@ -355,7 +355,7 @@ export default async function SoftwareComparisonsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Reproducible Repositories</h3>
               </div>
@@ -384,7 +384,7 @@ export default async function SoftwareComparisonsPage() {
               <Link
                 key={author.slug}
                 href={`/author/${author.slug}`}
-                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-emerald-300 hover:shadow-md transition-all group flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-amber-300 hover:shadow-md transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3.5 mb-3">
@@ -398,10 +398,10 @@ export default async function SoftwareComparisonsPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors text-sm">
+                      <h3 className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors text-sm">
                         {author.name}
                       </h3>
-                      <p className="text-[11px] text-emerald-700 font-medium">
+                      <p className="text-[11px] text-amber-700 font-medium">
                         {author.title}
                       </p>
                     </div>
@@ -411,7 +411,7 @@ export default async function SoftwareComparisonsPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700 group-hover:text-emerald-800">
+                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-700 group-hover:text-amber-800">
                   <span>View author comparisons</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

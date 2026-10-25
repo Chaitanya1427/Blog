@@ -77,7 +77,7 @@ export default async function WebDevelopmentPage() {
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 INP Latency Target
               </span>
-              <p className="text-2xl font-bold text-emerald-600">&lt; 45ms Real-User</p>
+              <p className="text-2xl font-bold text-amber-600">&lt; 45ms Real-User</p>
             </div>
             <div className="space-y-1">
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
@@ -109,9 +109,9 @@ export default async function WebDevelopmentPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-emerald-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
+          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-amber-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-100">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
                 <Code2 className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-zinc-900 text-base">
@@ -121,15 +121,15 @@ export default async function WebDevelopmentPage() {
                 Server Components, native Server Actions, useOptimistic, form states, and zero-waterfall data fetching patterns.
               </p>
             </div>
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-800">
               <span>3 Masterclasses</span>
               <span className="font-mono text-[11px] text-zinc-500">Intermediate</span>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-emerald-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
+          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-amber-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-100">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
                 <Gauge className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-zinc-900 text-base">
@@ -139,15 +139,15 @@ export default async function WebDevelopmentPage() {
                 Interaction to Next Paint profiling, Long Animation Frames (LoAF) telemetry, scheduler.yield(), and Rust CSS compilation.
               </p>
             </div>
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-800">
               <span>2 Masterclasses</span>
               <span className="font-mono text-[11px] text-zinc-500">Advanced</span>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-emerald-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
+          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-amber-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-100">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
                 <Zap className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-zinc-900 text-base">
@@ -157,15 +157,15 @@ export default async function WebDevelopmentPage() {
                 Distributed edge runtimes, sub-5ms JWT verification via jose, anycast geo-routing, and dynamic localized rewrites.
               </p>
             </div>
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-800">
               <span>2 Masterclasses</span>
               <span className="font-mono text-[11px] text-zinc-500">Advanced</span>
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-emerald-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
+          <div className="p-6 rounded-2xl bg-white border border-zinc-200 shadow-2xs hover:border-amber-300 hover:shadow-md transition-all space-y-4 flex flex-col justify-between">
             <div className="space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center border border-emerald-100">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
                 <Server className="w-5 h-5" />
               </div>
               <h3 className="font-bold text-zinc-900 text-base">
@@ -175,7 +175,7 @@ export default async function WebDevelopmentPage() {
                 Hardened 94MB multi-stage Alpine Docker images, standalone Next.js tracing, non-root users, and health checks.
               </p>
             </div>
-            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <div className="pt-3 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-800">
               <span>3 Masterclasses</span>
               <span className="font-mono text-[11px] text-zinc-500">DevOps</span>
             </div>
@@ -190,7 +190,7 @@ export default async function WebDevelopmentPage() {
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
               Featured Architectural Masterclass
             </h2>
-            <span className="text-xs font-semibold text-emerald-700">
+            <span className="text-xs font-semibold text-amber-800">
               Lead Blueprint
             </span>
           </div>
@@ -213,7 +213,7 @@ export default async function WebDevelopmentPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 01
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -225,7 +225,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 02
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -237,7 +237,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 03
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -249,7 +249,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 04
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -261,7 +261,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 05
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -286,7 +286,7 @@ export default async function WebDevelopmentPage() {
               Reproducible, type-safe implementation patterns tested across high-throughput production workloads.
             </p>
           </div>
-          <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 shrink-0">
+          <span className="text-xs font-mono text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 shrink-0">
             TypeScript 5.8 / Next.js 15
           </span>
         </div>
@@ -335,7 +335,7 @@ export default async function WebDevelopmentPage() {
                 Empirical architectural scores across rendering flexibility, Core Web Vitals, and developer velocity.
               </p>
             </div>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 shrink-0">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 shrink-0">
               Updated March 2026
             </span>
           </div>
@@ -356,17 +356,17 @@ export default async function WebDevelopmentPage() {
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Next.js 15 (App Router)</td>
                   <td className="py-3.5 px-4">RSC + Partial Prerendering</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">&lt; 38ms (Tier 1)</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Native Server Actions</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Full Edge &amp; Node</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">&lt; 38ms (Tier 1)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Native Server Actions</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Full Edge &amp; Node</td>
                   <td className="py-3.5 px-4">Full-stack enterprise applications</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Astro 5</td>
                   <td className="py-3.5 px-4">Server Islands + 0KB JS</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">&lt; 25ms (Tier 1)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">&lt; 25ms (Tier 1)</td>
                   <td className="py-3.5 px-4">Astro Actions</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Multi-adapter Edge</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Multi-adapter Edge</td>
                   <td className="py-3.5 px-4">Content, marketing &amp; media sites</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
@@ -380,17 +380,17 @@ export default async function WebDevelopmentPage() {
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Remix / React Router v7</td>
                   <td className="py-3.5 px-4">SSR + Nested Route Loaders</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">&lt; 45ms (Tier 1)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">&lt; 45ms (Tier 1)</td>
                   <td className="py-3.5 px-4">HTML Form Actions</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Full Edge &amp; Node</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Full Edge &amp; Node</td>
                   <td className="py-3.5 px-4">Dynamic data-intensive web portals</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">SvelteKit 2</td>
                   <td className="py-3.5 px-4">Fine-Grained Runes + SSR</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">&lt; 32ms (Tier 1)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">&lt; 32ms (Tier 1)</td>
                   <td className="py-3.5 px-4">Form Actions</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">Multi-adapter Edge</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">Multi-adapter Edge</td>
                   <td className="py-3.5 px-4">High-performance reactive interfaces</td>
                 </tr>
               </tbody>
@@ -413,7 +413,7 @@ export default async function WebDevelopmentPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">LoAF Task Budget</h3>
               </div>
@@ -423,7 +423,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Zero Uncached Cascades</h3>
               </div>
@@ -433,7 +433,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Cryptographic Nonces</h3>
               </div>
@@ -443,7 +443,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Alpine Docker &lt; 100MB</h3>
               </div>
@@ -453,7 +453,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Request-Scoped State</h3>
               </div>
@@ -463,7 +463,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">WCAG 2.2 AA Standard</h3>
               </div>
@@ -473,7 +473,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Instant Static Shell (PPR)</h3>
               </div>
@@ -483,7 +483,7 @@ export default async function WebDevelopmentPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Sub-5ms Edge Execution</h3>
               </div>
@@ -512,7 +512,7 @@ export default async function WebDevelopmentPage() {
               <Link
                 key={author.slug}
                 href={`/author/${author.slug}`}
-                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-emerald-300 hover:shadow-md transition-all group flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-amber-300 hover:shadow-md transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3.5 mb-3">
@@ -526,10 +526,10 @@ export default async function WebDevelopmentPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors text-sm">
+                      <h3 className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors text-sm">
                         {author.name}
                       </h3>
-                      <p className="text-[11px] text-emerald-700 font-medium">
+                      <p className="text-[11px] text-amber-700 font-medium">
                         {author.title}
                       </p>
                     </div>
@@ -539,7 +539,7 @@ export default async function WebDevelopmentPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700 group-hover:text-emerald-800">
+                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-700 group-hover:text-amber-800">
                   <span>View author guides</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

@@ -122,7 +122,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 prose-h3:text-xl sm:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-3
                 prose-p:mb-5 prose-p:leading-relaxed prose-p:text-zinc-700
                 prose-li:my-1 prose-li:text-zinc-700
-                prose-code:text-emerald-800 prose-code:bg-zinc-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-mono prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
+                prose-code:text-amber-900 prose-code:bg-amber-50/80 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-mono prose-code:text-sm prose-code:border prose-code:border-amber-200/60 prose-code:before:content-none prose-code:after:content-none
                 prose-pre:border prose-pre:border-zinc-800"
               dangerouslySetInnerHTML={{ __html: article.htmlContent || "" }}
             />
@@ -151,7 +151,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                     <Link
                       key={tag}
                       href={`/tag/${encodeURIComponent(tag.toLowerCase().replace(/\s+/g, "-"))}`}
-                      className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:bg-emerald-50 hover:text-emerald-700 font-medium transition-colors"
+                      className="text-xs px-3 py-1 rounded-md bg-zinc-100 text-zinc-700 hover:bg-amber-50 hover:text-amber-700 font-medium transition-colors"
                     >
                       #{tag}
                     </Link>
@@ -199,7 +199,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 </p>
                 <Link
                   href={`/author/${article.author.slug}`}
-                  className="inline-block text-emerald-700 hover:text-emerald-800 font-semibold hover:underline"
+                  className="inline-block text-amber-700 hover:text-amber-800 font-semibold hover:underline"
                 >
                   View all articles by {article.author.name} →
                 </Link>

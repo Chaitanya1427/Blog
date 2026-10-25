@@ -121,7 +121,7 @@ export default async function HomePage() {
               <Link
                 key={category.slug}
                 href={`/category/${category.slug}`}
-                className="px-4 py-1.5 rounded-full text-xs font-semibold bg-white/20 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white border border-white/30 text-white transition-all shadow-xs backdrop-blur-xs"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold bg-white/20 hover:bg-amber-600 hover:border-amber-500 hover:text-white border border-white/30 text-white transition-all shadow-xs backdrop-blur-xs"
               >
                 {category.name}
               </Link>
@@ -135,7 +135,7 @@ export default async function HomePage() {
             Scroll to explore
           </span>
           <div className="w-5 h-8 rounded-full border border-white/30 flex items-start justify-center p-1 backdrop-blur-xs">
-            <div className="w-1 h-2 rounded-full bg-emerald-400 animate-bounce" />
+            <div className="w-1 h-2 rounded-full bg-amber-400 animate-bounce" />
           </div>
         </div>
       </section>
@@ -151,12 +151,12 @@ export default async function HomePage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
-              <Compass className="w-5 h-5 text-emerald-600" />
+              <Compass className="w-5 h-5 text-amber-600" />
               <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
                 Editorial Lead Story
               </h2>
             </div>
-            <div className="flex items-center gap-1 text-xs font-semibold text-emerald-700">
+            <div className="flex items-center gap-1 text-xs font-semibold text-amber-700">
               <Flame className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
               <span>Verified Benchmark</span>
             </div>
@@ -195,7 +195,7 @@ export default async function HomePage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
             <div className="flex items-center gap-2.5">
-              <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <div className="p-2 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
                 <Cpu className="w-5 h-5" />
               </div>
               <div>
@@ -209,7 +209,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/category/ai-tools"
-              className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
+              className="text-xs sm:text-sm font-semibold text-amber-700 hover:text-amber-800 hover:underline flex items-center gap-1 shrink-0"
             >
               <span>View all AI</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -234,7 +234,7 @@ export default async function HomePage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
             <div className="flex items-center gap-2.5">
-              <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <div className="p-2 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
                 <Layers className="w-5 h-5" />
               </div>
               <div>
@@ -248,7 +248,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/category/software-comparisons"
-              className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
+              className="text-xs sm:text-sm font-semibold text-amber-700 hover:text-amber-800 hover:underline flex items-center gap-1 shrink-0"
             >
               <span>View all comparisons</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -273,7 +273,7 @@ export default async function HomePage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200">
             <div className="flex items-center gap-2.5">
-              <div className="p-2 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+              <div className="p-2 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
                 <BookOpen className="w-5 h-5" />
               </div>
               <div>
@@ -287,7 +287,7 @@ export default async function HomePage() {
             </div>
             <Link
               href="/category/web-development"
-              className="text-xs sm:text-sm font-semibold text-emerald-700 hover:text-emerald-800 hover:underline flex items-center gap-1 shrink-0"
+              className="text-xs sm:text-sm font-semibold text-amber-700 hover:text-amber-800 hover:underline flex items-center gap-1 shrink-0"
             >
               <span>View all guides</span>
               <ArrowRight className="w-3.5 h-3.5" />

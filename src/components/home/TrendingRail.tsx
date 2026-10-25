@@ -22,7 +22,7 @@ export function TrendingRail({ articles }: TrendingRailProps) {
               <p className="text-[11px] text-zinc-500">Most engaged by engineering teams</p>
             </div>
           </div>
-          <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
             Top Reads
           </span>
         </div>
@@ -33,12 +33,12 @@ export function TrendingRail({ articles }: TrendingRailProps) {
             return (
               <div key={article.slug} className="py-4 first:pt-0 last:pb-0 group">
                 <div className="flex items-start gap-4">
-                  <span className="font-mono text-2xl font-black text-zinc-300 group-hover:text-emerald-600 transition-colors shrink-0">
+                  <span className="font-mono text-2xl font-black text-zinc-300 group-hover:text-amber-600 transition-colors shrink-0">
                     {rank}
                   </span>
                   <div className="space-y-1.5 flex-1 min-w-0">
                     <div className="flex items-center gap-2 text-[11px] text-zinc-500">
-                      <span className="font-semibold text-emerald-700 hover:underline">
+                      <span className="font-semibold text-amber-700 hover:underline">
                         {article.category.name}
                       </span>
                       <span>•</span>
@@ -47,7 +47,7 @@ export function TrendingRail({ articles }: TrendingRailProps) {
                         {article.readingTime}m
                       </span>
                     </div>
-                    <h4 className="font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors text-sm sm:text-base leading-snug line-clamp-2">
+                    <h4 className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors text-sm sm:text-base leading-snug line-clamp-2">
                       <Link href={`/blog/${article.slug}`}>
                         {article.title}
                       </Link>

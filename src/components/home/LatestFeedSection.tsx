@@ -50,10 +50,10 @@ export function LatestFeedSection({ articles }: LatestFeedSectionProps) {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-zinc-200 gap-4">
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <div className="p-1.5 rounded-lg bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <div className="p-1.5 rounded-lg bg-amber-50 text-amber-800 border border-amber-200">
               <Layers className="w-4 h-4" />
             </div>
-            <span className="text-xs font-semibold text-emerald-700 uppercase tracking-wider">
+            <span className="text-xs font-semibold text-amber-700 uppercase tracking-wider">
               Continuous Feed
             </span>
           </div>
@@ -98,7 +98,7 @@ export function LatestFeedSection({ articles }: LatestFeedSectionProps) {
       <div className="text-center pt-6">
         <Link
           href="/category/ai-tools"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900 hover:bg-emerald-700 text-white text-xs font-semibold transition-all shadow-xs"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-900 hover:bg-amber-700 text-white text-xs font-semibold transition-all shadow-xs"
         >
           <span>Explore Complete Publishing Archive</span>
           <ArrowRight className="w-4 h-4" />

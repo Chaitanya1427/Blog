@@ -10,7 +10,7 @@ interface AuthorBioProps {
 export function AuthorBio({ author }: AuthorBioProps) {
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center shadow-2xs">
-      <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-emerald-500/20 bg-zinc-200">
+      <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0 border-2 border-amber-500/30 bg-zinc-200">
         <Image
           src={author.avatar}
           alt={author.name}
@@ -24,11 +24,11 @@ export function AuthorBio({ author }: AuthorBioProps) {
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
             <h4 className="text-base font-semibold text-zinc-900">
-              <Link href={`/author/${author.slug}`} className="hover:text-emerald-700 transition-colors">
+              <Link href={`/author/${author.slug}`} className="hover:text-amber-700 transition-colors">
                 {author.name}
               </Link>
             </h4>
-            <p className="text-xs text-emerald-700 font-semibold">
+            <p className="text-xs text-amber-700 font-semibold">
               {author.title}
             </p>
           </div>

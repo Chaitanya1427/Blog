@@ -34,7 +34,7 @@ export function AIToolsHero({ articlesCount }: AIToolsHeroProps) {
 
         {/* Calm Editorial Integrity Tag */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-black/40 border border-white/20 text-zinc-300 text-xs backdrop-blur-md shadow-xs">
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+          <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
           <span className="font-medium text-white">Empirical Benchmarks</span>
           <span className="text-zinc-500">•</span>
           <Link
@@ -50,7 +50,7 @@ export function AIToolsHero({ articlesCount }: AIToolsHeroProps) {
       <div className="relative z-10 w-full max-w-4xl mx-auto text-center px-4 flex flex-col items-center justify-center space-y-5 my-auto">
         {/* Subdued Status Pill */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 border border-white/25 text-zinc-200 text-xs font-medium backdrop-blur-md shadow-xs">
-          <span className="w-2 h-2 rounded-full bg-emerald-400" />
+          <span className="w-2 h-2 rounded-full bg-amber-400" />
           <span className="font-semibold uppercase tracking-wider text-[11px] text-white">
             2026 Q1 Production Radar
           </span>
@@ -72,9 +72,9 @@ export function AIToolsHero({ articlesCount }: AIToolsHeroProps) {
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
           <a
             href="#benchmark-matrix"
-            className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-all shadow-md shadow-emerald-500/20 hover:scale-[1.02] cursor-pointer inline-flex items-center gap-2"
+            className="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold text-sm transition-all shadow-md shadow-amber-500/20 hover:scale-[1.02] cursor-pointer inline-flex items-center gap-2"
           >
-            <BarChart3 className="w-4 h-4 text-zinc-950" />
+            <BarChart3 className="w-4 h-4 text-stone-950" />
             <span>Explore Benchmark Matrix</span>
           </a>
 
@@ -94,25 +94,25 @@ export function AIToolsHero({ articlesCount }: AIToolsHeroProps) {
           </span>
           <Link
             href="/blog/claude-3-7-vs-gpt-4-5-system-design"
-            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
+            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-amber-600 hover:border-amber-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
           >
             #Claude 3.7 vs GPT-4.5
           </Link>
           <Link
             href="/blog/prompt-caching-cost-optimization-frontier-models"
-            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
+            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-amber-600 hover:border-amber-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
           >
             #Prompt Caching (-90%)
           </Link>
           <Link
             href="/blog/local-llms-ollama-deepseek-production"
-            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
+            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-amber-600 hover:border-amber-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
           >
             #DeepSeek Local vLLM
           </Link>
           <Link
             href="/blog/hybrid-rag-bm25-pgvector-rerank"
-            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-emerald-600 hover:border-emerald-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
+            className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/15 hover:bg-amber-600 hover:border-amber-500 hover:text-white border border-white/25 text-white transition-all shadow-xs backdrop-blur-md"
           >
             #Hybrid RAG pgvector
           </Link>
@@ -135,7 +135,7 @@ export function AIToolsHero({ articlesCount }: AIToolsHeroProps) {
             <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400 drop-shadow-xs">
               Cache Cost Savings
             </span>
-            <p className="text-xl sm:text-2xl font-bold text-emerald-400 tracking-tight drop-shadow-xs">
+            <p className="text-xl sm:text-2xl font-bold text-amber-400 tracking-tight drop-shadow-xs">
               Up to 90% Off
             </p>
           </div>

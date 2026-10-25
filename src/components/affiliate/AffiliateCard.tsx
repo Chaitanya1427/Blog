@@ -23,9 +23,9 @@ export function AffiliateCard({
   badge = "Editor's Pick",
 }: AffiliateCardProps) {
   return (
-    <div className="my-8 rounded-2xl border-2 border-emerald-600/30 bg-white p-6 sm:p-8 shadow-md relative overflow-hidden">
+    <div className="my-8 rounded-2xl border-2 border-amber-600/30 bg-white p-6 sm:p-8 shadow-md relative overflow-hidden">
       {badge && (
-        <div className="absolute top-0 right-0 bg-emerald-700 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-lg shadow-xs">
+        <div className="absolute top-0 right-0 bg-amber-600 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-bl-lg shadow-xs">
           {badge}
         </div>
       )}
@@ -42,7 +42,7 @@ export function AffiliateCard({
 
         <div className="flex items-center gap-3">
           {rating && (
-            <div className="px-3 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 font-bold text-sm">
+            <div className="px-3 py-1 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 font-bold text-sm">
               ★ {rating}
             </div>
           )}
@@ -56,13 +56,13 @@ export function AffiliateCard({
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 p-4 rounded-xl bg-zinc-50 border border-zinc-200 text-xs">
         <div>
-          <span className="font-bold text-emerald-700 block mb-2">
+          <span className="font-bold text-amber-800 block mb-2">
             Key Advantages:
           </span>
           <ul className="space-y-1.5">
             {pros.map((pro, idx) => (
               <li key={idx} className="flex items-start gap-2">
-                <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                <Check className="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5" />
                 <span className="text-zinc-700">{pro}</span>
               </li>
             ))}

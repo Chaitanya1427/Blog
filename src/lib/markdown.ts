@@ -49,7 +49,7 @@ export async function parseMarkdownToHtml(markdown: string): Promise<string> {
     const id = slugify(raw);
     return `<h${depth} id="${id}" class="scroll-mt-20 group flex items-center justify-between">
       <span>${text}</span>
-      <a href="#${id}" class="opacity-0 group-hover:opacity-100 text-zinc-400 hover:text-emerald-600 transition-opacity ml-2 text-base font-normal" aria-label="Permalink to ${raw}">#</a>
+      <a href="#${id}" class="opacity-0 group-hover:opacity-100 text-zinc-400 hover:text-amber-600 transition-opacity ml-2 text-base font-normal" aria-label="Permalink to ${raw}">#</a>
     </h${depth}>`;
   };
 
@@ -64,7 +64,7 @@ export async function parseMarkdownToHtml(markdown: string): Promise<string> {
     const target = isExternal ? 'target="_blank"' : "";
     const titleAttr = title ? `title="${title}"` : "";
 
-    return `<a href="${href}" ${rel} ${target} ${titleAttr} class="text-emerald-700 hover:text-emerald-800 hover:underline font-medium">${text}</a>`;
+    return `<a href="${href}" ${rel} ${target} ${titleAttr} class="text-amber-700 hover:text-amber-800 hover:underline font-medium">${text}</a>`;
   };
 
   renderer.table = (token) => {

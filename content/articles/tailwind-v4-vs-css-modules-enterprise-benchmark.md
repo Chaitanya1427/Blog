@@ -70,7 +70,7 @@ With Tailwind CSS v4:
 // Complete self-contained component styling
 export function TelemetryCard({ label, value }: { label: string; value: string }) {
   return (
-    <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 hover:border-emerald-300 transition-colors">
+    <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 hover:border-amber-300 transition-colors">
       <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
         {label}
       </span>

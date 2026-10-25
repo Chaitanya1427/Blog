@@ -37,10 +37,10 @@ export function EcosystemTicker() {
         {/* Left Badge */}
         <div className="flex items-center gap-2 shrink-0">
           <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
           </span>
-          <span className="font-bold tracking-wider uppercase text-emerald-400 text-[11px] flex items-center gap-1">
+          <span className="font-bold tracking-wider uppercase text-amber-400 text-[11px] flex items-center gap-1">
             <TrendingUp className="w-3.5 h-3.5" />
             2026 Tech Pulse:
           </span>
@@ -54,10 +54,10 @@ export function EcosystemTicker() {
               href={item.href}
               className="inline-flex items-center gap-2 whitespace-nowrap hover:text-white transition-colors group"
             >
-              <span className="px-1.5 py-0.5 rounded bg-zinc-800 text-[10px] font-semibold text-zinc-300 group-hover:bg-emerald-950 group-hover:text-emerald-400 group-hover:border-emerald-800/50 border border-zinc-700 transition-colors">
+              <span className="px-1.5 py-0.5 rounded bg-zinc-800 text-[10px] font-semibold text-zinc-300 group-hover:bg-amber-950 group-hover:text-amber-300 group-hover:border-amber-800/50 border border-zinc-700 transition-colors">
                 {item.tag}
               </span>
-              <span className="group-hover:text-emerald-300 transition-colors">
+              <span className="group-hover:text-amber-300 transition-colors">
                 {item.title}
               </span>
               {index < TICKER_ITEMS.length - 1 && (

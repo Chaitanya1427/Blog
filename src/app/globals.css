@@ -4,18 +4,18 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #fafaf9;
-  --foreground: #18181b;
+  --background: #faf8f5;
+  --foreground: #1c1917;
   --card: #ffffff;
-  --card-foreground: #18181b;
-  --border: #e4e4e7;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --primary: #059669;
+  --card-foreground: #1c1917;
+  --border: #e7e2d9;
+  --muted: #f5f0e8;
+  --muted-foreground: #78716c;
+  --primary: #b45309;
   --primary-foreground: #ffffff;
-  --accent: #10b981;
-  --accent-light: #ecfdf5;
-  --ring: #10b981;
+  --accent: #d97706;
+  --accent-light: #fffbeb;
+  --ring: #d97706;
 }
 
 body {

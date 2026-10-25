@@ -188,7 +188,7 @@ export function StackComparisonMatcher() {
             <span
               className={`text-[10px] px-1.5 py-0.2 rounded font-mono ${
                 activeBattleId === battle.id
-                  ? "bg-emerald-500/20 text-emerald-300"
+                  ? "bg-amber-500/20 text-amber-300"
                   : "bg-zinc-100 text-zinc-600"
               }`}
             >
@@ -203,7 +203,7 @@ export function StackComparisonMatcher() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-100">
           <div>
             <div className="flex items-center gap-3 mb-1.5">
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
                 Architectural Showdown
               </span>
               <span className="text-xs text-zinc-500 font-mono">
@@ -218,13 +218,13 @@ export function StackComparisonMatcher() {
             </p>
           </div>
 
-          <div className="flex items-center gap-2 bg-emerald-50/80 border border-emerald-200 px-4 py-2.5 rounded-2xl shrink-0">
-            <Award className="w-4 h-4 text-emerald-700 shrink-0" />
+          <div className="flex items-center gap-2 bg-amber-50/80 border border-amber-200 px-4 py-2.5 rounded-2xl shrink-0">
+            <Award className="w-4 h-4 text-amber-700 shrink-0" />
             <div className="text-left">
-              <span className="text-[10px] uppercase font-bold text-emerald-800 tracking-wider block">
+              <span className="text-[10px] uppercase font-bold text-amber-800 tracking-wider block">
                 Editor Verdict
               </span>
-              <span className="text-xs font-semibold text-emerald-950">
+              <span className="text-xs font-semibold text-amber-950">
                 {activeBattle.winner}
               </span>
             </div>
@@ -240,7 +240,7 @@ export function StackComparisonMatcher() {
                 <h4 className="text-lg font-bold text-zinc-950">
                   {activeBattle.contenderA.name}
                 </h4>
-                <span className="font-mono text-sm font-bold text-emerald-700 bg-white px-2.5 py-1 rounded-lg border border-zinc-200">
+                <span className="font-mono text-sm font-bold text-amber-700 bg-white px-2.5 py-1 rounded-lg border border-zinc-200">
                   {activeBattle.contenderA.score.toFixed(1)} / 10
                 </span>
               </div>
@@ -271,7 +271,7 @@ export function StackComparisonMatcher() {
                 <h4 className="text-lg font-bold text-zinc-950">
                   {activeBattle.contenderB.name}
                 </h4>
-                <span className="font-mono text-sm font-bold text-emerald-700 bg-white px-2.5 py-1 rounded-lg border border-zinc-200">
+                <span className="font-mono text-sm font-bold text-amber-700 bg-white px-2.5 py-1 rounded-lg border border-zinc-200">
                   {activeBattle.contenderB.score.toFixed(1)} / 10
                 </span>
               </div>
@@ -299,7 +299,7 @@ export function StackComparisonMatcher() {
         {/* The Deciding Factor Strip */}
         <div className="p-4 rounded-2xl bg-white border border-zinc-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2.5">
-            <Zap className="w-4 h-4 text-emerald-600 shrink-0" />
+            <Zap className="w-4 h-4 text-amber-600 shrink-0" />
             <span className="text-zinc-600">
               <strong className="text-zinc-900 font-semibold">Deciding Factor:</strong>{" "}
               {activeBattle.decidingFactor}
@@ -307,7 +307,7 @@ export function StackComparisonMatcher() {
           </div>
           <Link
             href={`/blog/${activeBattle.slug}`}
-            className="inline-flex items-center gap-1.5 font-bold text-emerald-700 hover:text-emerald-800 transition-colors shrink-0 group"
+            className="inline-flex items-center gap-1.5 font-bold text-amber-700 hover:text-amber-800 transition-colors shrink-0 group"
           >
             <span>Read complete benchmark audit</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

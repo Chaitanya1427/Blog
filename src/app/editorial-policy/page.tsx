@@ -28,7 +28,7 @@ export default function EditorialPolicyPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 my-6">
         <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <Code2 className="w-5 h-5 text-emerald-600" />
+          <Code2 className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-sm text-zinc-900">Every Snippet Tested</h3>
           <p className="text-xs text-zinc-600">
             All code blocks in tutorials are compiled and executed in real environments before publication.
@@ -36,7 +36,7 @@ export default function EditorialPolicyPage() {
         </div>
 
         <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <Cpu className="w-5 h-5 text-teal-600" />
+          <Cpu className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-sm text-zinc-900">Responsible AI Use</h3>
           <p className="text-xs text-zinc-600">
             AI assists our research and drafting, but human engineers direct, edit, verify, and stand behind every word.
@@ -44,7 +44,7 @@ export default function EditorialPolicyPage() {
         </div>
 
         <div className="p-5 rounded-xl bg-white border border-zinc-200 space-y-2 shadow-2xs">
-          <BookCheck className="w-5 h-5 text-emerald-600" />
+          <BookCheck className="w-5 h-5 text-amber-600" />
           <h3 className="font-semibold text-sm text-zinc-900">Continuous Corrections</h3>
           <p className="text-xs text-zinc-600">
             When APIs change or errors are reported, we issue transparent timestamped updates rather than silent edits.

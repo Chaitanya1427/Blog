@@ -51,7 +51,7 @@ export default async function TagPage({ params }: TagPageProps) {
       />
 
       <div className="p-8 rounded-2xl bg-zinc-50 border border-zinc-200 flex items-center gap-4">
-        <div className="p-3 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-200">
+        <div className="p-3 rounded-xl bg-amber-50 text-amber-800 border border-amber-200">
           <TagIcon className="w-6 h-6" />
         </div>
         <div>

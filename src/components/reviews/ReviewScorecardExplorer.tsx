@@ -183,7 +183,7 @@ export function ReviewScorecardExplorer() {
             <span
               className={`text-[10px] px-1.5 py-0.2 rounded font-mono ${
                 selectedId === tool.id
-                  ? "bg-emerald-500/20 text-emerald-300"
+                  ? "bg-amber-500/20 text-amber-300"
                   : "bg-zinc-100 text-zinc-600"
               }`}
             >
@@ -198,7 +198,7 @@ export function ReviewScorecardExplorer() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-zinc-100">
           <div>
             <div className="flex items-center gap-3 mb-1.5">
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
+              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200">
                 {activeTool.verdict}
               </span>
               <span className="text-xs text-zinc-500 font-mono">
@@ -218,7 +218,7 @@ export function ReviewScorecardExplorer() {
               <span className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500 block">
                 Overall Score
               </span>
-              <span className="text-3xl font-bold font-mono text-emerald-700">
+              <span className="text-3xl font-bold font-mono text-amber-700">
                 {activeTool.score.toFixed(1)}
               </span>
             </div>
@@ -229,7 +229,7 @@ export function ReviewScorecardExplorer() {
         {/* Empirical Measurements Strip */}
         <div className="space-y-3">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
-            <BarChart3 className="w-3.5 h-3.5 text-emerald-600" />
+            <BarChart3 className="w-3.5 h-3.5 text-amber-600" />
             Verified Empirical Measurements
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -255,7 +255,7 @@ export function ReviewScorecardExplorer() {
         {/* Pillar Scores */}
         <div className="space-y-3">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
-            <Layers className="w-3.5 h-3.5 text-emerald-600" />
+            <Layers className="w-3.5 h-3.5 text-amber-600" />
             Evaluation Pillars Breakdown
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -268,7 +268,7 @@ export function ReviewScorecardExplorer() {
                   <h5 className="font-semibold text-zinc-900 text-sm">
                     {pillar.name}
                   </h5>
-                  <span className="text-xs font-mono font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
+                  <span className="text-xs font-mono font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">
                     {pillar.score.toFixed(1)}
                   </span>
                 </div>
@@ -287,7 +287,7 @@ export function ReviewScorecardExplorer() {
           </span>
           <Link
             href={`/blog/${activeTool.slug}`}
-            className="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 hover:text-emerald-800 transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-bold text-amber-700 hover:text-amber-800 transition-colors group"
           >
             <span>Read full audit &amp; benchmarks</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

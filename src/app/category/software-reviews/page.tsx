@@ -73,7 +73,7 @@ export default async function SoftwareReviewsPage() {
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
                 Testing Standard
               </span>
-              <p className="text-2xl font-bold text-emerald-600">5-Pillar Scorecard</p>
+              <p className="text-2xl font-bold text-amber-600">5-Pillar Scorecard</p>
             </div>
             <div className="space-y-1">
               <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
@@ -98,7 +98,7 @@ export default async function SoftwareReviewsPage() {
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
               Featured Comprehensive Software Audit
             </h2>
-            <span className="text-xs font-semibold text-emerald-700">
+            <span className="text-xs font-semibold text-amber-800">
               Lead Audit
             </span>
           </div>
@@ -121,7 +121,7 @@ export default async function SoftwareReviewsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 01
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -133,7 +133,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 02
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -145,7 +145,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 03
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -157,7 +157,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 04
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -169,7 +169,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-mono font-bold text-xs">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
                 05
               </div>
               <h3 className="font-semibold text-zinc-900 text-sm">
@@ -194,7 +194,7 @@ export default async function SoftwareReviewsPage() {
               Explore granular pillar scores, empirical memory metrics, and key architectural verdicts.
             </p>
           </div>
-          <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 shrink-0">
+          <span className="text-xs font-mono text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 shrink-0">
             Updated March 2026
           </span>
         </div>
@@ -243,7 +243,7 @@ export default async function SoftwareReviewsPage() {
                 Comparative benchmarks across measured memory RSS, execution latency, and overall editorial rating.
               </p>
             </div>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 shrink-0">
+            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 shrink-0">
               Audited Q1 2026
             </span>
           </div>
@@ -264,41 +264,41 @@ export default async function SoftwareReviewsPage() {
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">OrbStack 1.7</td>
                   <td className="py-3.5 px-4">Container Virtualization</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">380 MB RAM (Idle)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">380 MB RAM (Idle)</td>
                   <td className="py-3.5 px-4">1.9s cold engine boot</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.5 / 10</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-800">Editor&apos;s Choice (macOS)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.5 / 10</td>
+                  <td className="py-3.5 px-4 font-medium text-amber-900">Editor&apos;s Choice (macOS)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Ghostty 1.0</td>
                   <td className="py-3.5 px-4">Terminal Emulator</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">34 MB RAM (Idle)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">34 MB RAM (Idle)</td>
                   <td className="py-3.5 px-4">1.8ms keypress-to-render</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.6 / 10</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-800">Editor&apos;s Choice (Terminals)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.6 / 10</td>
+                  <td className="py-3.5 px-4 font-medium text-amber-900">Editor&apos;s Choice (Terminals)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Biome 1.9</td>
                   <td className="py-3.5 px-4">Linter &amp; Formatter</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">86 MB RAM (Peak)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">86 MB RAM (Peak)</td>
                   <td className="py-3.5 px-4">1.94s cold check (450k LOC)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.5 / 10</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-800">Editor&apos;s Choice (Toolchains)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.5 / 10</td>
+                  <td className="py-3.5 px-4 font-medium text-amber-900">Editor&apos;s Choice (Toolchains)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Bruno 1.38</td>
                   <td className="py-3.5 px-4">API Testing Client</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">110 MB RAM (Offline)</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">110 MB RAM (Offline)</td>
                   <td className="py-3.5 px-4">0ms cloud sync lag (Git-only)</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.6 / 10</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-800">Editor&apos;s Choice (API Clients)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.6 / 10</td>
+                  <td className="py-3.5 px-4 font-medium text-amber-900">Editor&apos;s Choice (API Clients)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Neon Postgres</td>
                   <td className="py-3.5 px-4">Serverless Database</td>
                   <td className="py-3.5 px-4">Auto-scales to 0 CU</td>
                   <td className="py-3.5 px-4">420ms copy-on-write branch</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.4 / 10</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.4 / 10</td>
                   <td className="py-3.5 px-4 font-medium text-zinc-800">Highly Recommended (Edge)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
@@ -306,16 +306,16 @@ export default async function SoftwareReviewsPage() {
                   <td className="py-3.5 px-4">AI Coding IDE</td>
                   <td className="py-3.5 px-4">1,820 MB RAM (Electron)</td>
                   <td className="py-3.5 px-4">91.4% multi-file edit pass</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.2 / 10</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.2 / 10</td>
                   <td className="py-3.5 px-4 font-medium text-zinc-800">Highly Recommended (AI)</td>
                 </tr>
                 <tr className="hover:bg-zinc-50/50 transition-colors">
                   <td className="py-3.5 px-4 font-semibold text-zinc-950">Axiom Observability</td>
                   <td className="py-3.5 px-4">Serverless Logging &amp; APM</td>
-                  <td className="py-3.5 px-4 font-semibold text-emerald-700">4.2 KB SDK footprint</td>
+                  <td className="py-3.5 px-4 font-semibold text-amber-800">4.2 KB SDK footprint</td>
                   <td className="py-3.5 px-4">Sub-second query across 100M logs</td>
-                  <td className="py-3.5 px-4 font-bold text-emerald-700">9.4 / 10</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-800">Editor&apos;s Choice (Serverless Logs)</td>
+                  <td className="py-3.5 px-4 font-bold text-amber-800">9.4 / 10</td>
+                  <td className="py-3.5 px-4 font-medium text-amber-900">Editor&apos;s Choice (Serverless Logs)</td>
                 </tr>
               </tbody>
             </table>
@@ -337,7 +337,7 @@ export default async function SoftwareReviewsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Zero Paid Placements</h3>
               </div>
@@ -347,7 +347,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Real Hardware Testing</h3>
               </div>
@@ -357,7 +357,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Pinned Version Numbers</h3>
               </div>
@@ -367,7 +367,7 @@ export default async function SoftwareReviewsPage() {
             </div>
 
             <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-amber-700">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <h3 className="font-semibold text-zinc-900 text-xs">Open Benchmark Scripts</h3>
               </div>
@@ -396,7 +396,7 @@ export default async function SoftwareReviewsPage() {
               <Link
                 key={author.slug}
                 href={`/author/${author.slug}`}
-                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-emerald-300 hover:shadow-md transition-all group flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-zinc-200/80 hover:border-amber-300 hover:shadow-md transition-all group flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center gap-3.5 mb-3">
@@ -410,10 +410,10 @@ export default async function SoftwareReviewsPage() {
                       />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-zinc-900 group-hover:text-emerald-700 transition-colors text-sm">
+                      <h3 className="font-semibold text-zinc-900 group-hover:text-amber-700 transition-colors text-sm">
                         {author.name}
                       </h3>
-                      <p className="text-[11px] text-emerald-700 font-medium">
+                      <p className="text-[11px] text-amber-700 font-medium">
                         {author.title}
                       </p>
                     </div>
@@ -423,7 +423,7 @@ export default async function SoftwareReviewsPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-emerald-700 group-hover:text-emerald-800">
+                <div className="pt-4 mt-4 border-t border-zinc-100 flex items-center justify-between text-xs font-semibold text-amber-700 group-hover:text-amber-800">
                   <span>View author audits</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

@@ -50,7 +50,7 @@ export function Breadcrumbs({ items, variant = "default", className = "" }: Brea
         <Link
           href="/"
           className={`flex items-center gap-1 transition-colors ${
-            isDark ? "hover:text-emerald-400" : "hover:text-emerald-700"
+            isDark ? "hover:text-amber-400" : "hover:text-amber-700"
           }`}
         >
           <Home className="w-3.5 h-3.5" />
@@ -79,8 +79,8 @@ export function Breadcrumbs({ items, variant = "default", className = "" }: Brea
                   href={item.href}
                   className={`transition-colors truncate max-w-[150px] ${
                     isDark
-                      ? "hover:text-emerald-400 text-zinc-400"
-                      : "hover:text-emerald-700 text-zinc-500"
+                      ? "hover:text-amber-400 text-zinc-400"
+                      : "hover:text-amber-700 text-zinc-500"
                   }`}
                 >
                   {item.name}

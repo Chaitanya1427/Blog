@@ -9,8 +9,8 @@ export function AffiliateNotice({ customText }: AffiliateNoticeProps) {
   const text = customText || siteConfig.monetization.affiliate.defaultDisclosure;
 
   return (
-    <div className="my-6 p-4 rounded-xl border border-emerald-200 bg-emerald-50/70 text-xs text-emerald-950 leading-relaxed flex items-start gap-3">
-      <Info className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
+    <div className="my-6 p-4 rounded-xl border border-amber-200 bg-amber-50/70 text-xs text-amber-950 leading-relaxed flex items-start gap-3">
+      <Info className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
       <div>
         <span className="font-semibold block mb-0.5">Editorial Disclosure</span>
         <span>{text}</span>

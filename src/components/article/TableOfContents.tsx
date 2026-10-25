@@ -43,7 +43,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
   return (
     <nav aria-label="Table of contents" className="space-y-3">
       <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-900">
-        <List className="w-4 h-4 text-emerald-600" />
+        <List className="w-4 h-4 text-amber-600" />
         <span>Table of Contents</span>
       </div>
 
@@ -63,7 +63,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
                   item.level === 3 ? "-ml-[21px]" : ""
                 } ${
                   isActive
-                    ? "border-emerald-600 text-emerald-700 font-semibold"
+                    ? "border-amber-600 text-amber-800 font-semibold"
                     : "border-transparent hover:text-zinc-900"
                 }`}
               >
