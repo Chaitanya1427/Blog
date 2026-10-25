@@ -9,9 +9,13 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
+  variant?: "default" | "dark";
+  className?: string;
 }
 
-export function Breadcrumbs({ items }: BreadcrumbsProps) {
+export function Breadcrumbs({ items, variant = "default", className = "" }: BreadcrumbsProps) {
+  const isDark = variant === "dark";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -37,10 +41,17 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className="flex items-center text-xs text-zinc-500 mb-6 flex-wrap gap-1">
+      <nav
+        aria-label="Breadcrumb"
+        className={`flex items-center text-xs mb-6 flex-wrap gap-1 ${
+          isDark ? "text-zinc-400" : "text-zinc-500"
+        } ${className}`}
+      >
         <Link
           href="/"
-          className="flex items-center gap-1 hover:text-emerald-700 transition-colors"
+          className={`flex items-center gap-1 transition-colors ${
+            isDark ? "hover:text-emerald-400" : "hover:text-emerald-700"
+          }`}
         >
           <Home className="w-3.5 h-3.5" />
           <span className="sr-only">Home</span>
@@ -50,15 +61,27 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
           const isLast = idx === items.length - 1;
           return (
             <div key={item.href} className="flex items-center gap-1">
-              <ChevronRight className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+              <ChevronRight
+                className={`w-3.5 h-3.5 shrink-0 ${
+                  isDark ? "text-zinc-600" : "text-zinc-400"
+                }`}
+              />
               {isLast ? (
-                <span className="text-zinc-800 font-medium truncate max-w-[200px] sm:max-w-md">
+                <span
+                  className={`font-medium truncate max-w-[200px] sm:max-w-md ${
+                    isDark ? "text-zinc-200" : "text-zinc-800"
+                  }`}
+                >
                   {item.name}
                 </span>
               ) : (
                 <Link
                   href={item.href}
-                  className="hover:text-emerald-700 transition-colors truncate max-w-[150px]"
+                  className={`transition-colors truncate max-w-[150px] ${
+                    isDark
+                      ? "hover:text-emerald-400 text-zinc-400"
+                      : "hover:text-emerald-700 text-zinc-500"
+                  }`}
                 >
                   {item.name}
                 </Link>

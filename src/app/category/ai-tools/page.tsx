@@ -7,16 +7,9 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { siteConfig } from "@/config/site";
+import { AIToolsHero } from "@/components/ai-tools/AIToolsHero";
 import {
-  Cpu,
-  Database,
-  ShieldCheck,
-  CheckCircle2,
-  Gauge,
-  Zap,
-  Layers,
   ArrowRight,
-  TrendingDown,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -42,52 +35,8 @@ export default async function AIToolsPage() {
 
   return (
     <div className="space-y-16 sm:space-y-20 pb-20">
-      {/* 1. Header Section (Direct & Authoritative, NO EYEBROW TEXT) */}
-      <section className="border-b border-zinc-200 bg-gradient-to-b from-zinc-50 via-white to-zinc-50/50 pt-10 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-6">
-          <Breadcrumbs
-            items={[{ name: "AI Tools", href: "/category/ai-tools" }]}
-          />
-
-          <div className="max-w-4xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 leading-[1.12]">
-              AI Tools &amp; Foundation Models for Engineers
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-600 leading-relaxed font-normal">
-              Empirical evaluations, prompt caching architectures, local LLM deployments, and enterprise foundation model benchmarks for software engineering teams.
-            </p>
-          </div>
-
-          {/* Core Telemetry Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-zinc-200/80">
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Verified Guides
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">{articles.length} Deep Dives</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Cache Cost Savings
-              </span>
-              <p className="text-2xl font-bold text-emerald-600">Up to 80% Off</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Context Window
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">2M Tokens</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Editorial Integrity
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100% Unbiased</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. Premium Production-Grade Hero Section */}
+      <AIToolsHero articlesCount={articles.length} />
 
       {/* 2. Lead Masterclass Spotlight */}
       {leadArticle && (
@@ -182,7 +131,7 @@ export default async function AIToolsPage() {
       </section>
 
       {/* 4. Complete Library of Publications (Full 3-Column Grid) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="all-guides" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between pb-4 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -211,7 +160,7 @@ export default async function AIToolsPage() {
       </div>
 
       {/* 6. Empirical Frontier Models Benchmark Evaluation Matrix */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="benchmark-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-zinc-100 gap-4">
             <div>

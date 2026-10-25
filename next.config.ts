@@ -20,6 +20,25 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async redirects() {
+    return [
+      {
+        source: "/reviews",
+        destination: "/category/software-reviews",
+        permanent: true,
+      },
+      {
+        source: "/comparisons",
+        destination: "/category/software-comparisons",
+        permanent: true,
+      },
+      {
+        source: "/tutorials",
+        destination: "/category/web-development",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -16,7 +16,6 @@ export const siteConfig: SiteConfig = {
   },
   navigation: {
     main: [
-      { title: "Home", href: "/" },
       { title: "AI Tools", href: "/category/ai-tools" },
       { title: "AI Coding", href: "/category/ai-coding" },
       { title: "Tutorials", href: "/category/web-development" },
