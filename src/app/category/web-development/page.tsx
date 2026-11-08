@@ -3,26 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { getArticlesByCategory, getAllAuthors } from "@/lib/content";
 import { ArticleCard } from "@/components/article/ArticleCard";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { siteConfig } from "@/config/site";
+import { TutorialHero } from "@/components/web-dev/TutorialHero";
 import { TutorialCodeShowcase } from "@/components/web-dev/TutorialCodeShowcase";
 import {
-  BookOpen,
   Code2,
   Zap,
-  Layers,
   ArrowRight,
-  ShieldCheck,
   CheckCircle2,
   Gauge,
-  Cpu,
   Server,
-  Terminal,
-  Activity,
-  Boxes,
-  Lock,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -48,55 +40,11 @@ export default async function WebDevelopmentPage() {
 
   return (
     <div className="space-y-16 sm:space-y-24 pb-24">
-      {/* 1. Header Section (Direct, Authoritative, NO EYEBROW TEXT) */}
-      <section className="border-b border-zinc-200 bg-gradient-to-b from-zinc-50 via-white to-zinc-50/50 pt-10 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-6">
-          <Breadcrumbs
-            items={[{ name: "Tutorials", href: "/category/web-development" }]}
-          />
-
-          <div className="max-w-4xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 leading-[1.12]">
-              Web Engineering Tutorials &amp; Architecture Blueprints
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-600 leading-relaxed font-normal">
-              Step-by-step masterclasses on Next.js 15, React 19 Server Components, Core Web Vitals, Tailwind CSS v4, and distributed edge architectures with verified production code.
-            </p>
-          </div>
-
-          {/* Core Telemetry Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-zinc-200/80">
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Published Tutorials
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">{articles.length} Masterclasses</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                INP Latency Target
-              </span>
-              <p className="text-2xl font-bold text-amber-600">&lt; 45ms Real-User</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Architecture Standard
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">RSC + Edge + PPR</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Code Verification
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100% Reproducible</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. Premium Elite Hero Section */}
+      <TutorialHero />
 
       {/* 2. Structured Learning Tracks (Curriculum Paths) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="learning-tracks" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6 flex items-center justify-between pb-3 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -295,7 +243,7 @@ export default async function WebDevelopmentPage() {
       </section>
 
       {/* 6. Complete Library of Publications (Full 3-Column Grid) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="all-tutorials" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between pb-4 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">

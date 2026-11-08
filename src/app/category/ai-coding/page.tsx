@@ -3,21 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { getArticlesByCategory, getAllAuthors } from "@/lib/content";
 import { ArticleCard } from "@/components/article/ArticleCard";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { siteConfig } from "@/config/site";
-import {
-  Cpu,
-  Terminal,
-  ShieldCheck,
-  CheckCircle2,
-  FileCode2,
-  GitBranch,
-  Layers,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
+import { AICodingHero } from "@/components/ai-coding/AICodingHero";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "AI Coding & Autonomous Software Engineering | TechPilot",
@@ -42,52 +32,8 @@ export default async function AICodingPage() {
 
   return (
     <div className="space-y-16 sm:space-y-20 pb-20">
-      {/* 1. Header Section (Direct & Authoritative, NO EYEBROW TEXT) */}
-      <section className="border-b border-zinc-200 bg-gradient-to-b from-zinc-50 via-white to-zinc-50/50 pt-10 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-6">
-          <Breadcrumbs
-            items={[{ name: "AI Coding", href: "/category/ai-coding" }]}
-          />
-
-          <div className="max-w-4xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 leading-[1.12]">
-              AI Coding &amp; Autonomous Software Engineering
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-600 leading-relaxed font-normal">
-              Empirical benchmarks, context engineering patterns, AST resolution engines, and production sandboxing blueprints for autonomous coding agents and terminal pair-programming.
-            </p>
-          </div>
-
-          {/* Core Telemetry Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-zinc-200/80">
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Verified Guides
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">{articles.length} Deep Dives</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Refactor Pass Rate
-              </span>
-              <p className="text-2xl font-bold text-amber-600">94.2% Monorepo</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Sandboxing Standard
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">gVisor / Docker</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Editorial Stance
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100% Unbiased</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. Premium Elite Hero Section */}
+      <AICodingHero />
 
       {/* 2. Lead Analysis Spotlight */}
       {leadArticle && (
@@ -106,7 +52,7 @@ export default async function AICodingPage() {
       )}
 
       {/* 3. The 5-Layer Autonomous AI Coding Reference Architecture */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="reference-architecture" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-8">
           <div className="max-w-3xl space-y-2">
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -118,71 +64,141 @@ export default async function AICodingPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
-                01
+            <Link
+              href="/blog/context-engineering-monorepos-ai-agents"
+              className="p-5 rounded-2xl bg-zinc-50 hover:bg-amber-50/40 border border-zinc-200/80 hover:border-amber-300 transition-all space-y-3 group flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs group-hover:bg-amber-500 group-hover:text-stone-950 transition-colors">
+                    01
+                  </div>
+                  <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-zinc-200/60 text-zinc-700">
+                    Tree-sitter
+                  </span>
+                </div>
+                <h3 className="font-semibold text-zinc-900 group-hover:text-amber-800 transition-colors text-sm">
+                  AST Context Engine
+                </h3>
+                <p className="text-xs text-zinc-600 leading-relaxed">
+                  Tree-sitter symbol graphs and call-hierarchy slicing that feed only relevant tokens into the prompt window.
+                </p>
               </div>
-              <h3 className="font-semibold text-zinc-900 text-sm">
-                AST Context Engine
-              </h3>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                Tree-sitter symbol graphs and call-hierarchy slicing that feed only relevant tokens into the prompt window.
-              </p>
-            </div>
+              <div className="text-[11px] font-semibold text-amber-700 group-hover:text-amber-900 inline-flex items-center gap-1 pt-2">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
-            <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
-                02
+            <Link
+              href="/blog/spec-driven-development-agentic-coding"
+              className="p-5 rounded-2xl bg-zinc-50 hover:bg-amber-50/40 border border-zinc-200/80 hover:border-amber-300 transition-all space-y-3 group flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs group-hover:bg-amber-500 group-hover:text-stone-950 transition-colors">
+                    02
+                  </div>
+                  <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-zinc-200/60 text-zinc-700">
+                    Zod Schemas
+                  </span>
+                </div>
+                <h3 className="font-semibold text-zinc-900 group-hover:text-amber-800 transition-colors text-sm">
+                  Spec-Driven Planning
+                </h3>
+                <p className="text-xs text-zinc-600 leading-relaxed">
+                  Zod schemas and TypeScript interface contracts that constrain agent generation to immutable boundaries.
+                </p>
               </div>
-              <h3 className="font-semibold text-zinc-900 text-sm">
-                Spec-Driven Planning
-              </h3>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                Zod schemas and TypeScript interface contracts that constrain agent generation to immutable boundaries.
-              </p>
-            </div>
+              <div className="text-[11px] font-semibold text-amber-700 group-hover:text-amber-900 inline-flex items-center gap-1 pt-2">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
-            <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
-                03
+            <Link
+              href="/blog/model-context-protocol-mcp-agentic-coding"
+              className="p-5 rounded-2xl bg-zinc-50 hover:bg-amber-50/40 border border-zinc-200/80 hover:border-amber-300 transition-all space-y-3 group flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs group-hover:bg-amber-500 group-hover:text-stone-950 transition-colors">
+                    03
+                  </div>
+                  <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-zinc-200/60 text-zinc-700">
+                    Stdio / SSE
+                  </span>
+                </div>
+                <h3 className="font-semibold text-zinc-900 group-hover:text-amber-800 transition-colors text-sm">
+                  MCP Tool Protocol
+                </h3>
+                <p className="text-xs text-zinc-600 leading-relaxed">
+                  Standardized Model Context Protocol servers exposing read-only schemas and sanitized database inspection.
+                </p>
               </div>
-              <h3 className="font-semibold text-zinc-900 text-sm">
-                MCP Tool Protocol
-              </h3>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                Standardized Model Context Protocol servers exposing read-only schemas and sanitized database inspection.
-              </p>
-            </div>
+              <div className="text-[11px] font-semibold text-amber-700 group-hover:text-amber-900 inline-flex items-center gap-1 pt-2">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
-            <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
-                04
+            <Link
+              href="/blog/sandboxing-docker-security-ai-agents"
+              className="p-5 rounded-2xl bg-zinc-50 hover:bg-amber-50/40 border border-zinc-200/80 hover:border-amber-300 transition-all space-y-3 group flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs group-hover:bg-amber-500 group-hover:text-stone-950 transition-colors">
+                    04
+                  </div>
+                  <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-zinc-200/60 text-zinc-700">
+                    runsc / OCI
+                  </span>
+                </div>
+                <h3 className="font-semibold text-zinc-900 group-hover:text-amber-800 transition-colors text-sm">
+                  gVisor Sandboxing
+                </h3>
+                <p className="text-xs text-zinc-600 leading-relaxed">
+                  User-space kernel isolation and outbound egress proxy whitelisting preventing unauthorized network exfiltration.
+                </p>
               </div>
-              <h3 className="font-semibold text-zinc-900 text-sm">
-                gVisor Sandboxing
-              </h3>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                User-space kernel isolation and outbound egress proxy whitelisting preventing unauthorized network exfiltration.
-              </p>
-            </div>
+              <div className="text-[11px] font-semibold text-amber-700 group-hover:text-amber-900 inline-flex items-center gap-1 pt-2">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
 
-            <div className="p-5 rounded-2xl bg-zinc-50 border border-zinc-200/80 space-y-3">
-              <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">
-                05
+            <Link
+              href="/blog/autonomous-test-driven-development-agents"
+              className="p-5 rounded-2xl bg-zinc-50 hover:bg-amber-50/40 border border-zinc-200/80 hover:border-amber-300 transition-all space-y-3 group flex flex-col justify-between"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs group-hover:bg-amber-500 group-hover:text-stone-950 transition-colors">
+                    05
+                  </div>
+                  <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-zinc-200/60 text-zinc-700">
+                    Vitest Loops
+                  </span>
+                </div>
+                <h3 className="font-semibold text-zinc-900 group-hover:text-amber-800 transition-colors text-sm">
+                  Self-Healing TDD
+                </h3>
+                <p className="text-xs text-zinc-600 leading-relaxed">
+                  Headless CI loops executing Vitest assertions, parsing JSON error stacks, and autonomously committing validated patches.
+                </p>
               </div>
-              <h3 className="font-semibold text-zinc-900 text-sm">
-                Self-Healing TDD
-              </h3>
-              <p className="text-xs text-zinc-600 leading-relaxed">
-                Headless CI loops executing Vitest assertions, parsing JSON error stacks, and autonomously committing validated patches.
-              </p>
-            </div>
+              <div className="text-[11px] font-semibold text-amber-700 group-hover:text-amber-900 inline-flex items-center gap-1 pt-2">
+                <span>Read Blueprint</span>
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* 4. Complete Library of Publications (Full 3-Column Grid) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="handbooks" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between pb-4 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -211,7 +227,7 @@ export default async function AICodingPage() {
       </div>
 
       {/* 6. Empirical Tooling Comparison Matrix */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="benchmark-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-zinc-100 gap-4">
             <div>

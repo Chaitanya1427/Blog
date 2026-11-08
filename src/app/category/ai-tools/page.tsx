@@ -36,7 +36,7 @@ export default async function AIToolsPage() {
   return (
     <div className="space-y-16 sm:space-y-20 pb-20">
       {/* 1. Premium Production-Grade Hero Section */}
-      <AIToolsHero articlesCount={articles.length} />
+      <AIToolsHero />
 
       {/* 2. Lead Masterclass Spotlight */}
       {leadArticle && (

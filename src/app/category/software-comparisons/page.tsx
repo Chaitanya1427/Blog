@@ -3,23 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { getArticlesByCategory, getAllAuthors } from "@/lib/content";
 import { ArticleCard } from "@/components/article/ArticleCard";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { siteConfig } from "@/config/site";
+import { SoftwareComparisonsHero } from "@/components/comparisons/SoftwareComparisonsHero";
 import { StackComparisonMatcher } from "@/components/comparisons/StackComparisonMatcher";
-import {
-  Scale,
-  CheckCircle2,
-  Zap,
-  Cpu,
-  Layers,
-  ArrowRight,
-  ShieldCheck,
-  Award,
-  Database,
-  Workflow,
-} from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Head-to-Head Software Comparisons & Stack Face-Offs | TechPilot",
@@ -44,52 +33,8 @@ export default async function SoftwareComparisonsPage() {
 
   return (
     <div className="space-y-16 sm:space-y-24 pb-24">
-      {/* 1. Header Section (Direct, Authoritative, NO EYEBROW TEXT) */}
-      <section className="border-b border-zinc-200 bg-gradient-to-b from-zinc-50 via-white to-zinc-50/50 pt-10 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-6">
-          <Breadcrumbs
-            items={[{ name: "Comparisons", href: "/category/software-comparisons" }]}
-          />
-
-          <div className="max-w-4xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 leading-[1.12]">
-              Head-to-Head Software Comparisons &amp; Tech Stack Face-Offs
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-600 leading-relaxed font-normal">
-              Objective, data-driven comparisons of competing frameworks, databases, and developer infrastructure. Side-by-side architectural trade-offs, migration cost analyses, and empirical decision matrices.
-            </p>
-          </div>
-
-          {/* Core Telemetry Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-zinc-200/80">
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Verified Comparisons
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">{articles.length} Deep Face-Offs</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Decision Framework
-              </span>
-              <p className="text-2xl font-bold text-amber-600">4-Quadrant Audit</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Synthetic Load Baseline
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100k Req/s Testing</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Editorial Stance
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100% Objective</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. Premium Elite Hero Section */}
+      <SoftwareComparisonsHero />
 
       {/* 2. Featured Lead Showdown Spotlight */}
       {leadArticle && (
@@ -108,7 +53,7 @@ export default async function SoftwareComparisonsPage() {
       )}
 
       {/* 3. The 4-Quadrant Architecture Decision Methodology */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="decision-methodology" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-8">
           <div className="max-w-3xl space-y-2">
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -172,7 +117,7 @@ export default async function SoftwareComparisonsPage() {
       </section>
 
       {/* 4. Interactive Stack Comparison Matcher */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <section id="stack-matcher" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-zinc-200 gap-2">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -191,7 +136,7 @@ export default async function SoftwareComparisonsPage() {
       </section>
 
       {/* 5. Complete Library of Software Comparisons (Full 3-Column Grid) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="all-comparisons" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between pb-4 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -220,7 +165,7 @@ export default async function SoftwareComparisonsPage() {
       </div>
 
       {/* 7. Empirical 2026 Enterprise Stack Decision Matrix */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="migration-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-zinc-100 gap-4">
             <div>

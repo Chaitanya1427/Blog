@@ -3,23 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { getArticlesByCategory, getAllAuthors } from "@/lib/content";
 import { ArticleCard } from "@/components/article/ArticleCard";
-import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { AdUnit } from "@/components/ads/AdUnit";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { siteConfig } from "@/config/site";
+import { SoftwareReviewsHero } from "@/components/reviews/SoftwareReviewsHero";
 import { ReviewScorecardExplorer } from "@/components/reviews/ReviewScorecardExplorer";
-import {
-  CheckCircle2,
-  ShieldCheck,
-  Zap,
-  Cpu,
-  Layers,
-  ArrowRight,
-  Scale,
-  SlidersHorizontal,
-  Flame,
-  Award,
-} from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Empirical Software Reviews & Developer Tooling Evaluations | TechPilot",
@@ -44,52 +33,8 @@ export default async function SoftwareReviewsPage() {
 
   return (
     <div className="space-y-16 sm:space-y-24 pb-24">
-      {/* 1. Header Section (Direct, Authoritative, NO EYEBROW TEXT) */}
-      <section className="border-b border-zinc-200 bg-gradient-to-b from-zinc-50 via-white to-zinc-50/50 pt-10 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto space-y-6">
-          <Breadcrumbs
-            items={[{ name: "Software Reviews", href: "/category/software-reviews" }]}
-          />
-
-          <div className="max-w-4xl space-y-4">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-950 leading-[1.12]">
-              Empirical Software Reviews &amp; Developer Tooling Evaluations
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-600 leading-relaxed font-normal">
-              Rigorous, reproducible benchmarks and hands-on production audits of developer tools, cloud platforms, IDEs, databases, and engineering SaaS. Zero paid placements, 100% telemetry-driven.
-            </p>
-          </div>
-
-          {/* Core Telemetry Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-zinc-200/80">
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Audited Tool Reviews
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">{articles.length} Deep Audits</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Testing Standard
-              </span>
-              <p className="text-2xl font-bold text-amber-600">5-Pillar Scorecard</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Stress Test Baseline
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">450k LOC Monorepos</p>
-            </div>
-            <div className="space-y-1">
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
-                Editorial Independence
-              </span>
-              <p className="text-2xl font-bold text-zinc-900">100% Unbiased</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 1. Premium Elite Hero Section */}
+      <SoftwareReviewsHero />
 
       {/* 2. Featured Lead Audit Spotlight */}
       {leadArticle && (
@@ -108,7 +53,7 @@ export default async function SoftwareReviewsPage() {
       )}
 
       {/* 3. The TechPilot 5-Pillar Evaluation Methodology */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="evaluation-methodology" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-8">
           <div className="max-w-3xl space-y-2">
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -184,7 +129,7 @@ export default async function SoftwareReviewsPage() {
       </section>
 
       {/* 4. Interactive Review Scorecard Explorer */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <section id="scorecard-explorer" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-zinc-200 gap-2">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -203,7 +148,7 @@ export default async function SoftwareReviewsPage() {
       </section>
 
       {/* 5. Complete Library of Software Reviews (Full 3-Column Grid) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="all-reviews" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between pb-4 border-b border-zinc-200">
           <div>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">
@@ -232,7 +177,7 @@ export default async function SoftwareReviewsPage() {
       </div>
 
       {/* 7. Empirical 2026 Developer Tooling Benchmark & Verdict Matrix */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="benchmark-matrix" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl border border-zinc-200 p-6 sm:p-8 lg:p-10 shadow-xs space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-zinc-100 gap-4">
             <div>
